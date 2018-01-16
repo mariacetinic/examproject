@@ -1,7 +1,7 @@
 # Examensproject | Medieinstitutet 2018
 
-Webbutvecklare inom e-handel
-Maria Cetinic
+- Program: Webbutvecklare inom e-handel
+- Student: Maria Cetinic
 
 ## Examensarbetets delar
 
