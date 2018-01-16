@@ -13,13 +13,36 @@
 <div id="wrapper" class="hfeed">
 <header id="header" role="banner">
 <section id="top-menu" class="grey-bg-color">
-    <div class="top-text"><h6>Tel: 031 - 30 03 30</h6></div>
-    <div class="top-text"><h6>Free delivery from 300kr</h6></div>
-    <div class="top-text"><h6>1-2 days delivery</h6></div>
+    <?php
+
+    if( have_rows('contact_info') ):
+
+        while( have_rows('contact_info') ) : the_row();
+
+            $value = get_sub_field('contact_text');
+
+            echo $value . '|';
+
+        endwhile;
+
+    endif;
+
+
+
+    //vill ta bort sista tecknet
+    //rtrim($values, '|');
+    //echo substr($value, 0, -1);
+
+    //echo substr_replace($value ,"",-1);
+    ?>
 </section>
 <section id="branding">
-    <div id="site-title">
-        <?php if ( is_front_page() || is_home() || is_front_page() && is_home() ) { echo '<h1>'; } ?><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_html( get_bloginfo( 'name' ) ); ?>" rel="home"><?php echo esc_html( get_bloginfo( 'name' ) ); ?></a><?php if ( is_front_page() || is_home() || is_front_page() && is_home() ) { echo '</h1>'; } ?>
+    <div id="logo">
+        <?php if ( is_front_page() || is_home() || is_front_page() && is_home() ) { echo ''; } ?>
+            <a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_html( get_bloginfo( 'name' ) ); ?>" rel="home"><?php echo esc_html( get_bloginfo( 'name' ) ); ?>
+                <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo-white.png" alt="" width="" height="" />
+            </a>
+        <?php if ( is_front_page() || is_home() || is_front_page() && is_home() ) { echo ''; } ?>
     </div>
     <!--<div id="site-description">
         <?php //bloginfo( 'description' ); ?>

@@ -26,22 +26,47 @@ BlankSlate is distributed under the terms of the GNU GPL
 ****************** DARK PURPLE: b561dd
 ******************************************
 ******************************************
+
 */
 
 html,body,div,span,applet,object,iframe,blockquote,pre,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,menu,nav,output,ruby,section,summary,time,mark,audio,video{
     padding:0;
     border:0;
     margin:0;
-    vertical-align:baseline;
+    vertical-align: baseline;
     color: #333;
 }
 
-#site-title h1, #site-title a{
-    font-family: 'Gloria Hallelujah', cursive;
-    color: #fff;
-    font-size: 20px;
-    margin: 0;
+
+
+
+body{
+    line-height: 1;
+    font-family: 'Roboto', sans-serif;
 }
+
+ol,ul{
+    list-style: none
+}
+
+blockquote:before,blockquote:after,q:before,q:after{
+    content:'';content:none
+}
+table{
+    border-collapse:collapse;
+    border-spacing:0
+}
+
+/*
+******************************************
+******************************************
+****************** GLOBAL STYLES FOR TEXT
+******************************************
+******************************************
+
+font-family: 'Gloria Hallelujah', cursive;
+
+*/
 
 
 a{
@@ -51,13 +76,11 @@ a{
 h1 a{
     font-family: 'Gloria Hallelujah', cursive;
     color: #fff;
-    font-size: 1.5em;
 }
 
 h2{
     font-family: 'Gloria Hallelujah', cursive;
     color: #b561dd;
-    font-size: 2em;
 }
 
 h3{
@@ -68,7 +91,27 @@ h4{
 
 }
 
-h5
+h5{
+
+}
+
+h6{
+
+}
+
+p{
+
+}
+
+
+
+/*
+******************************************
+******************************************
+****************** BACKGROUND AND TEXT COLORS
+******************************************
+******************************************
+*/
 
 .white-color{
     color: #fff;
@@ -77,43 +120,6 @@ h5
 .grey-bg-color{
     background-color: #f8f8f8;
 }
-    
-body{
-    line-height: 1;
-}
-ol,ul{
-    list-style: none
-}
-blockquote,q{
-    quotes:none
-}
-blockquote:before,blockquote:after,q:before,q:after{
-    content:'';content:none
-}
-table{
-    border-collapse:collapse;
-    border-spacing:0
-}
-article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{
-    display:block
-}
-.clear{
-    clear:both
-}
-
-.sticky{}
-.bypostauthor{}
-.wp-caption{}
-.wp-caption-text{}
-.gallery-caption{}
-.alignright{}
-.alignleft{}
-.aligncenter{}
-.screen-reader-text{
-    clip:rect(1px, 1px, 1px, 1px);
-    position:absolute !important
-}
-
 /*
 ******************************************
 ******************************************
@@ -209,8 +215,8 @@ article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{
     color: #333;
 }
 
-li #menu-item-23 a{
-    color: red;
+#menu-main-menu li a:nth-child(4){
+    color: red; /*varför funkar det inteeeee*/
 }
 
 
@@ -245,7 +251,6 @@ li #menu-item-23 a{
 
 #subscription p{
     padding-top: 30px;
-    line-height: 23px;
 }
 
 /*
