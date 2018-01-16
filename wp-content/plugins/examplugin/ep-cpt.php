@@ -115,3 +115,43 @@ function dwwp_register_taxonomy() {
 }
 
 add_action('init', 'dwwp_register_taxonomy');
+
+function dwwp_load_templates() {
+
+    //se att vi är på box sidan
+    //när wp är inte på boxsidan så kommer den gå vidare
+
+    if ( get_query_var( 'post_type' ) != 'box' ) {
+        return;
+    }
+
+    //är vi på archive eller search sidan
+
+    if ( is_archive() || is_search() ) {
+        //kolla om det finns en custom arkiv template
+        if( file_exists(get_styleshet_directory(). '/archive-box.php') ) {
+            return get_stylesheet_directory() . '/archive-box.php';
+
+        } else {
+            //om det inte finns, använd den som finns i denna plugin
+            return plugin_dir_path(__FILE__) . 'templates/archive-box.php';
+        }
+    } else {
+
+        //om vi inte är på arkiv eller söksidan så går vi till singelsidan
+        if ( file_exists( get_stylesheet_directory(). '/single-box.php' ) ) {
+            return get_stylesheet_directory() . '/single-box.php';
+        } else {
+            //returnera min
+            return plugin_dir_path(__FILE__) . 'templates/single-box.php';
+        }
+    }
+
+    //returnera grundtemplaten
+    //om allt ovan falerar så används $original_template
+    //return get_page_template();
+}
+
+//template include är säkraste sättet
+//tar template include för att hålla mig inom wordpress template hiearchies gränserna
+add_action( 'template_include', 'dwwp_load_templates' );
