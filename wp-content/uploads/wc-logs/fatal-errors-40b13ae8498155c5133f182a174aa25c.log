@@ -1,0 +1,196 @@
+2018-01-03T16:23:06+00:00 CRITICAL Uncaught Error: Call to undefined function get_customericons() in /Applications/MAMP/htdocs/examproject/wp-content/themes/examproject2017/header.php:29
+Stack trace:
+#0 /Applications/MAMP/htdocs/examproject/wp-includes/template.php(688): require_once()
+#1 /Applications/MAMP/htdocs/examproject/wp-includes/template.php(647): load_template('/Applications/M...', true)
+#2 /Applications/MAMP/htdocs/examproject/wp-includes/general-template.php(45): locate_template(Array, true)
+#3 /Applications/MAMP/htdocs/examproject/wp-content/themes/examproject2017/search.php(1): get_header()
+#4 /Applications/MAMP/htdocs/examproject/wp-includes/template-loader.php(74): include('/Applications/M...')
+#5 /Applications/MAMP/htdocs/examproject/wp-blog-header.php(19): require_once('/Applications/M...')
+#6 /Applications/MAMP/htdocs/examproject/index.php(17): require('/Applications/M...')
+#7 {main}
+  thrown
+
+2018-01-03T16:24:09+00:00 CRITICAL Uncaught Error: Call to undefined function get_customericons() in /Applications/MAMP/htdocs/examproject/wp-content/themes/examproject2017/header.php:29
+Stack trace:
+#0 /Applications/MAMP/htdocs/examproject/wp-includes/template.php(688): require_once()
+#1 /Applications/MAMP/htdocs/examproject/wp-includes/template.php(647): load_template('/Applications/M...', true)
+#2 /Applications/MAMP/htdocs/examproject/wp-includes/general-template.php(45): locate_template(Array, true)
+#3 /Applications/MAMP/htdocs/examproject/wp-content/themes/examproject2017/search.php(1): get_header()
+#4 /Applications/MAMP/htdocs/examproject/wp-includes/template-loader.php(74): include('/Applications/M...')
+#5 /Applications/MAMP/htdocs/examproject/wp-blog-header.php(19): require_once('/Applications/M...')
+#6 /Applications/MAMP/htdocs/examproject/index.php(17): require('/Applications/M...')
+#7 {main}
+  thrown
+
+2018-01-03T16:24:27+00:00 CRITICAL Uncaught Error: Call to undefined function get_customer() in /Applications/MAMP/htdocs/examproject/wp-content/themes/examproject2017/header.php:29
+Stack trace:
+#0 /Applications/MAMP/htdocs/examproject/wp-includes/template.php(688): require_once()
+#1 /Applications/MAMP/htdocs/examproject/wp-includes/template.php(647): load_template('/Applications/M...', true)
+#2 /Applications/MAMP/htdocs/examproject/wp-includes/general-template.php(45): locate_template(Array, true)
+#3 /Applications/MAMP/htdocs/examproject/wp-content/themes/examproject2017/search.php(1): get_header()
+#4 /Applications/MAMP/htdocs/examproject/wp-includes/template-loader.php(74): include('/Applications/M...')
+#5 /Applications/MAMP/htdocs/examproject/wp-blog-header.php(19): require_once('/Applications/M...')
+#6 /Applications/MAMP/htdocs/examproject/index.php(17): require('/Applications/M...')
+#7 {main}
+  thrown
+
+2018-01-10T19:12:30+00:00 CRITICAL Uncaught Error: Call to undefined function require_one() in /Applications/MAMP/htdocs/examproject/wp-content/plugins/examplugin/examplugin.php:18
+Stack trace:
+#0 /Applications/MAMP/htdocs/examproject/wp-admin/includes/plugin.php(560): include_once()
+#1 /Applications/MAMP/htdocs/examproject/wp-admin/plugins.php(42): activate_plugin('examplugin/exam...', 'http://examproj...', false)
+#2 {main}
+  thrown
+
+2018-01-10T19:12:31+00:00 CRITICAL Uncaught Error: Call to undefined function require_one() in /Applications/MAMP/htdocs/examproject/wp-content/plugins/examplugin/examplugin.php:18
+Stack trace:
+#0 /Applications/MAMP/htdocs/examproject/wp-admin/includes/plugin.php(1882): include()
+#1 /Applications/MAMP/htdocs/examproject/wp-admin/plugins.php(164): plugin_sandbox_scrape('examplugin/exam...')
+#2 {main}
+  thrown
+
+2018-01-10T19:12:31+00:00 CRITICAL Uncaught Error: Call to undefined function require_one() in /Applications/MAMP/htdocs/examproject/wp-content/plugins/examplugin/examplugin.php:18
+Stack trace:
+#0 /Applications/MAMP/htdocs/examproject/wp-admin/includes/plugin.php(1882): include()
+#1 /Applications/MAMP/htdocs/examproject/wp-admin/plugins.php(164): plugin_sandbox_scrape('examplugin/exam...')
+#2 {main}
+  thrown
+
+2018-01-10T19:16:15+00:00 CRITICAL Uncaught Error: Call to undefined function register_custom_post_type() in /Applications/MAMP/htdocs/examproject/wp-content/plugins/examplugin/ep-cpt.php:65
+Stack trace:
+#0 /Applications/MAMP/htdocs/examproject/wp-includes/class-wp-hook.php(298): dwwp_register_custom_post_type('')
+#1 /Applications/MAMP/htdocs/examproject/wp-includes/class-wp-hook.php(323): WP_Hook->apply_filters(NULL, Array)
+#2 /Applications/MAMP/htdocs/examproject/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#3 /Applications/MAMP/htdocs/examproject/wp-settings.php(448): do_action('init')
+#4 /Applications/MAMP/htdocs/examproject/wp-config.php(89): require_once('/Applications/M...')
+#5 /Applications/MAMP/htdocs/examproject/wp-load.php(37): require_once('/Applications/M...')
+#6 /Applications/MAMP/htdocs/examproject/wp-cron.php(26): require_once('/Applications/M...')
+#7 {main}
+  thrown
+
+2018-01-10T19:16:15+00:00 CRITICAL Uncaught Error: Call to undefined function register_custom_post_type() in /Applications/MAMP/htdocs/examproject/wp-content/plugins/examplugin/ep-cpt.php:65
+Stack trace:
+#0 /Applications/MAMP/htdocs/examproject/wp-includes/class-wp-hook.php(298): dwwp_register_custom_post_type('')
+#1 /Applications/MAMP/htdocs/examproject/wp-includes/class-wp-hook.php(323): WP_Hook->apply_filters(NULL, Array)
+#2 /Applications/MAMP/htdocs/examproject/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#3 /Applications/MAMP/htdocs/examproject/wp-settings.php(448): do_action('init')
+#4 /Applications/MAMP/htdocs/examproject/wp-config.php(89): require_once('/Applications/M...')
+#5 /Applications/MAMP/htdocs/examproject/wp-load.php(37): require_once('/Applications/M...')
+#6 /Applications/MAMP/htdocs/examproject/wp-admin/admin.php(31): require_once('/Applications/M...')
+#7 /Applications/MAMP/htdocs/examproject/wp-admin/plugins.php(10): require_once('/Applications/M...')
+#8 {main}
+  thrown
+
+2018-01-10T19:18:15+00:00 CRITICAL Uncaught Error: Call to undefined function register_custom_post_type() in /Applications/MAMP/htdocs/examproject/wp-content/plugins/examplugin/ep-cpt.php:65
+Stack trace:
+#0 /Applications/MAMP/htdocs/examproject/wp-includes/class-wp-hook.php(298): dwwp_register_custom_post_type('')
+#1 /Applications/MAMP/htdocs/examproject/wp-includes/class-wp-hook.php(323): WP_Hook->apply_filters(NULL, Array)
+#2 /Applications/MAMP/htdocs/examproject/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#3 /Applications/MAMP/htdocs/examproject/wp-settings.php(448): do_action('init')
+#4 /Applications/MAMP/htdocs/examproject/wp-config.php(89): require_once('/Applications/M...')
+#5 /Applications/MAMP/htdocs/examproject/wp-load.php(37): require_once('/Applications/M...')
+#6 /Applications/MAMP/htdocs/examproject/wp-cron.php(26): require_once('/Applications/M...')
+#7 {main}
+  thrown
+
+2018-01-10T19:18:15+00:00 CRITICAL Uncaught Error: Call to undefined function register_custom_post_type() in /Applications/MAMP/htdocs/examproject/wp-content/plugins/examplugin/ep-cpt.php:65
+Stack trace:
+#0 /Applications/MAMP/htdocs/examproject/wp-includes/class-wp-hook.php(298): dwwp_register_custom_post_type('')
+#1 /Applications/MAMP/htdocs/examproject/wp-includes/class-wp-hook.php(323): WP_Hook->apply_filters(NULL, Array)
+#2 /Applications/MAMP/htdocs/examproject/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#3 /Applications/MAMP/htdocs/examproject/wp-settings.php(448): do_action('init')
+#4 /Applications/MAMP/htdocs/examproject/wp-config.php(89): require_once('/Applications/M...')
+#5 /Applications/MAMP/htdocs/examproject/wp-load.php(37): require_once('/Applications/M...')
+#6 /Applications/MAMP/htdocs/examproject/wp-admin/admin.php(31): require_once('/Applications/M...')
+#7 /Applications/MAMP/htdocs/examproject/wp-admin/plugins.php(10): require_once('/Applications/M...')
+#8 {main}
+  thrown
+
+2018-01-10T19:19:38+00:00 CRITICAL Uncaught Error: Call to undefined function register_custom_post_type() in /Applications/MAMP/htdocs/examproject/wp-content/plugins/examplugin/ep-cpt.php:65
+Stack trace:
+#0 /Applications/MAMP/htdocs/examproject/wp-includes/class-wp-hook.php(298): dwwp_register_custom_post_type('')
+#1 /Applications/MAMP/htdocs/examproject/wp-includes/class-wp-hook.php(323): WP_Hook->apply_filters(NULL, Array)
+#2 /Applications/MAMP/htdocs/examproject/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#3 /Applications/MAMP/htdocs/examproject/wp-settings.php(448): do_action('init')
+#4 /Applications/MAMP/htdocs/examproject/wp-config.php(89): require_once('/Applications/M...')
+#5 /Applications/MAMP/htdocs/examproject/wp-load.php(37): require_once('/Applications/M...')
+#6 /Applications/MAMP/htdocs/examproject/wp-cron.php(26): require_once('/Applications/M...')
+#7 {main}
+  thrown
+
+2018-01-10T19:19:38+00:00 CRITICAL Uncaught Error: Call to undefined function register_custom_post_type() in /Applications/MAMP/htdocs/examproject/wp-content/plugins/examplugin/ep-cpt.php:65
+Stack trace:
+#0 /Applications/MAMP/htdocs/examproject/wp-includes/class-wp-hook.php(298): dwwp_register_custom_post_type('')
+#1 /Applications/MAMP/htdocs/examproject/wp-includes/class-wp-hook.php(323): WP_Hook->apply_filters(NULL, Array)
+#2 /Applications/MAMP/htdocs/examproject/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#3 /Applications/MAMP/htdocs/examproject/wp-settings.php(448): do_action('init')
+#4 /Applications/MAMP/htdocs/examproject/wp-config.php(89): require_once('/Applications/M...')
+#5 /Applications/MAMP/htdocs/examproject/wp-load.php(37): require_once('/Applications/M...')
+#6 /Applications/MAMP/htdocs/examproject/wp-admin/admin.php(31): require_once('/Applications/M...')
+#7 /Applications/MAMP/htdocs/examproject/wp-admin/plugins.php(10): require_once('/Applications/M...')
+#8 {main}
+  thrown
+
+2018-01-10T19:19:39+00:00 CRITICAL Uncaught Error: Call to undefined function register_custom_post_type() in /Applications/MAMP/htdocs/examproject/wp-content/plugins/examplugin/ep-cpt.php:65
+Stack trace:
+#0 /Applications/MAMP/htdocs/examproject/wp-includes/class-wp-hook.php(298): dwwp_register_custom_post_type('')
+#1 /Applications/MAMP/htdocs/examproject/wp-includes/class-wp-hook.php(323): WP_Hook->apply_filters(NULL, Array)
+#2 /Applications/MAMP/htdocs/examproject/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#3 /Applications/MAMP/htdocs/examproject/wp-settings.php(448): do_action('init')
+#4 /Applications/MAMP/htdocs/examproject/wp-config.php(89): require_once('/Applications/M...')
+#5 /Applications/MAMP/htdocs/examproject/wp-load.php(37): require_once('/Applications/M...')
+#6 /Applications/MAMP/htdocs/examproject/wp-admin/admin.php(31): require_once('/Applications/M...')
+#7 /Applications/MAMP/htdocs/examproject/wp-admin/plugins.php(10): require_once('/Applications/M...')
+#8 {main}
+  thrown
+
+2018-01-10T19:19:40+00:00 CRITICAL Uncaught Error: Call to undefined function register_custom_post_type() in /Applications/MAMP/htdocs/examproject/wp-content/plugins/examplugin/ep-cpt.php:65
+Stack trace:
+#0 /Applications/MAMP/htdocs/examproject/wp-includes/class-wp-hook.php(298): dwwp_register_custom_post_type('')
+#1 /Applications/MAMP/htdocs/examproject/wp-includes/class-wp-hook.php(323): WP_Hook->apply_filters(NULL, Array)
+#2 /Applications/MAMP/htdocs/examproject/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#3 /Applications/MAMP/htdocs/examproject/wp-settings.php(448): do_action('init')
+#4 /Applications/MAMP/htdocs/examproject/wp-config.php(89): require_once('/Applications/M...')
+#5 /Applications/MAMP/htdocs/examproject/wp-load.php(37): require_once('/Applications/M...')
+#6 /Applications/MAMP/htdocs/examproject/wp-admin/admin.php(31): require_once('/Applications/M...')
+#7 /Applications/MAMP/htdocs/examproject/wp-admin/plugins.php(10): require_once('/Applications/M...')
+#8 {main}
+  thrown
+
+2018-01-10T19:20:42+00:00 CRITICAL Uncaught Error: Call to undefined function register_box_post_type() in /Applications/MAMP/htdocs/examproject/wp-content/plugins/examplugin/ep-cpt.php:65
+Stack trace:
+#0 /Applications/MAMP/htdocs/examproject/wp-includes/class-wp-hook.php(298): dwwp_register_box_post_type('')
+#1 /Applications/MAMP/htdocs/examproject/wp-includes/class-wp-hook.php(323): WP_Hook->apply_filters(NULL, Array)
+#2 /Applications/MAMP/htdocs/examproject/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#3 /Applications/MAMP/htdocs/examproject/wp-settings.php(448): do_action('init')
+#4 /Applications/MAMP/htdocs/examproject/wp-config.php(89): require_once('/Applications/M...')
+#5 /Applications/MAMP/htdocs/examproject/wp-load.php(37): require_once('/Applications/M...')
+#6 /Applications/MAMP/htdocs/examproject/wp-cron.php(26): require_once('/Applications/M...')
+#7 {main}
+  thrown
+
+2018-01-10T19:20:42+00:00 CRITICAL Uncaught Error: Call to undefined function register_box_post_type() in /Applications/MAMP/htdocs/examproject/wp-content/plugins/examplugin/ep-cpt.php:65
+Stack trace:
+#0 /Applications/MAMP/htdocs/examproject/wp-includes/class-wp-hook.php(298): dwwp_register_box_post_type('')
+#1 /Applications/MAMP/htdocs/examproject/wp-includes/class-wp-hook.php(323): WP_Hook->apply_filters(NULL, Array)
+#2 /Applications/MAMP/htdocs/examproject/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#3 /Applications/MAMP/htdocs/examproject/wp-settings.php(448): do_action('init')
+#4 /Applications/MAMP/htdocs/examproject/wp-config.php(89): require_once('/Applications/M...')
+#5 /Applications/MAMP/htdocs/examproject/wp-load.php(37): require_once('/Applications/M...')
+#6 /Applications/MAMP/htdocs/examproject/wp-admin/admin.php(31): require_once('/Applications/M...')
+#7 /Applications/MAMP/htdocs/examproject/wp-admin/plugins.php(10): require_once('/Applications/M...')
+#8 {main}
+  thrown
+
+2018-01-10T19:20:43+00:00 CRITICAL Uncaught Error: Call to undefined function register_box_post_type() in /Applications/MAMP/htdocs/examproject/wp-content/plugins/examplugin/ep-cpt.php:65
+Stack trace:
+#0 /Applications/MAMP/htdocs/examproject/wp-includes/class-wp-hook.php(298): dwwp_register_box_post_type('')
+#1 /Applications/MAMP/htdocs/examproject/wp-includes/class-wp-hook.php(323): WP_Hook->apply_filters(NULL, Array)
+#2 /Applications/MAMP/htdocs/examproject/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#3 /Applications/MAMP/htdocs/examproject/wp-settings.php(448): do_action('init')
+#4 /Applications/MAMP/htdocs/examproject/wp-config.php(89): require_once('/Applications/M...')
+#5 /Applications/MAMP/htdocs/examproject/wp-load.php(37): require_once('/Applications/M...')
+#6 /Applications/MAMP/htdocs/examproject/wp-admin/admin.php(31): require_once('/Applications/M...')
+#7 /Applications/MAMP/htdocs/examproject/wp-admin/plugins.php(10): require_once('/Applications/M...')
+#8 {main}
+  thrown
+
