@@ -1,4 +1,7 @@
-# Examproject 
+# Examensproject | Medieinstitutet 2018
+
+Webbutvecklare inom e-handel
+Maria Cetinic
 
 ## Examensarbetets delar
 
@@ -11,3 +14,4 @@
 ### Tillägget
 - Syftet med tillägget är att lägga flera produkter i ett paket.
 - Det finns en egen post type i adminpanelen där admin kan göra sitt egna paket med x antal produkter i.
+
