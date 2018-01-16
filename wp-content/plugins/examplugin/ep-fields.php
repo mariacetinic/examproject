@@ -63,7 +63,7 @@ function dwwp_meta_callback($post) {
             'media_buttons' => false
         ];
 
-        wp_editor($content, $editor, $settings)
+        wp_editor($content, $editor, $settings);
 
     ?>
 

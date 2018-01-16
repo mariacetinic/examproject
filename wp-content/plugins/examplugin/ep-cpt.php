@@ -68,3 +68,50 @@ function dwwp_register_post_type() {
 }
 
 add_action('init', 'dwwp_register_post_type');
+
+
+function dwwp_register_taxonomy() {
+
+    $plural = 'Seasons';
+    $singular = 'Season';
+
+    $label = [
+        'name' => $plural,
+        'singular_name' => $singular,
+        'menu_name' => $plural,
+        'all_items' => 'All ' . $plural,
+        'edit_items' => 'Edit ' . $singular,
+        'parent_item' => null,
+        'parent_item_colon' => null,
+        'view_item' => 'Viwe ' . $singular,
+        'update_item' => 'Update ' . $singular,
+        'add_new_item' => 'Add new ' . $singular,
+        'new_item_name' => 'New ' . $singular . ' name',
+        'search_items' => 'Search ' . $plural,
+        'seperate_items_with_commas' => 'Seperate ' . $plural . ' with commas',
+        'add_or_remove_items' => 'Add or remove ' . $plural,
+        'not_found' => 'No ' . $plural . ' found ',
+    ];
+
+    $args = [
+        'labels' => $label,
+        'hierarchical' => true,
+        'show_ui' => true,
+        'show_in_menu' => true,
+        'show_in_nav_menus' => true,
+        'show_in_quick_edit' => true,
+        'show_admin_column' => true,
+        'description' => true,
+        'update_count_callback' => '_update_post_term_count',
+        'query_var' => true,
+        'rewrite' => array('slug' => 'season'),
+
+
+    ];
+
+
+    //vad ska taxonomen heta, till vilken post type, variabel till argumenten
+    register_taxonomy( 'season', 'box', $args );
+}
+
+add_action('init', 'dwwp_register_taxonomy');

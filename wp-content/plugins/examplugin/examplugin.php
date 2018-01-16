@@ -23,8 +23,15 @@ function dwwp_admin_enqueue_scripts() {
     //definiera två globala variablar
     global $pagenow, $typenow;
 
+    //$screen = get_current_screen();
     //strängen syns om jag tar display:none på vänstra admin baren...
-    var_dump($typenow);
+    //var_dump($screen);
+
+    if ( ($pagenow == 'post.php' || $pagenow == 'post-new.php') && $typenow == 'box' ) {
+        //enqueue our admin style
+        wp_enqueue_style('dwwp-admin-css', plugins_url( 'assets/css/admin-boxes.css', __FILE__  ) );
+        wp_enqueue_script( 'dwwp-box-js', plugins_url( 'assets/js/admin-boxes.js', __FILE__ ), array('jquery', 'jquery-ui-datepicker' ), '20180119', true );
+    }
 }
 //styles som används endast i admin, ta en hook som anpassar sig efter det.
 add_action('admin_enqueue_scripts', 'dwwp_admin_enqueue_scripts');

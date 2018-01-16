@@ -194,3 +194,14 @@ Stack trace:
 #8 {main}
   thrown
 
+2018-01-16T13:06:55+00:00 CRITICAL Uncaught Error: Call to undefined function dwwp_enqueue_script() in /Applications/MAMP/htdocs/examproject/wp-content/plugins/examplugin/examplugin.php:33
+Stack trace:
+#0 /Applications/MAMP/htdocs/examproject/wp-includes/class-wp-hook.php(298): dwwp_admin_enqueue_scripts('post.php')
+#1 /Applications/MAMP/htdocs/examproject/wp-includes/class-wp-hook.php(323): WP_Hook->apply_filters(NULL, Array)
+#2 /Applications/MAMP/htdocs/examproject/wp-includes/plugin.php(453): WP_Hook->do_action(Array)
+#3 /Applications/MAMP/htdocs/examproject/wp-admin/admin-header.php(97): do_action('admin_enqueue_s...', 'post.php')
+#4 /Applications/MAMP/htdocs/examproject/wp-admin/edit-form-advanced.php(472): require_once('/Applications/M...')
+#5 /Applications/MAMP/htdocs/examproject/wp-admin/post.php(173): include('/Applications/M...')
+#6 {main}
+  thrown
+
