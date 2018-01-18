@@ -66,16 +66,6 @@ return $count;
 }
 }
 
-function register_my_menus() {
 
-    register_nav_menus(
-      array(
-        'footer-menu-1' => __( 'Footer 1' ),
-        'footer-menu-2' => __( 'Footer 2' ),
-        'footer-menu-3' => __( 'Footer 3' )
-      )
-    );
-  }
-  add_action( 'init', 'register_my_menus' );
 
 

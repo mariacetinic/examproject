@@ -1,11 +1,12 @@
 <?php
 /**
- * Template Name: About us
+ * Template Name: Text template
  */
 
 get_header();
 
 ?>
+</div>
     <div class="container-skinny">
 
         <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
@@ -22,32 +23,22 @@ get_header();
                     <section class="hero-images"><img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" /></section>
 
                 <?php endif; ?>
-                <div class="container-skinny">
+
+                <div class="container-skinny aboutus">
                 <section>
                     <article>
-                        <?php the_title(); ?>
+                        <h1><?php the_title(); ?></h1>
                     </article>
-                    <article>
-                        <?php
+                    <?php
+                    if ( !wp_is_mobile() ) {
+                        ?><article>
+                            <?php wp_nav_menu( array( 'theme_location' => 'aside-menu-1', 'container_class' => 'my_custom_aside' ) ); ?>
+                        </article>
+                    <?php }
+                    ?>
 
-                        if( have_rows('menu_links') ):
 
-                            while( have_rows('menu_links') ) : the_row();
 
-                                $link = get_sub_field('link');
-
-                                if( $link ): ?>
-
-                                    <a class="button" href="<?php echo $link['url']; ?>" target="<?php echo $link['target']; ?>"><?php echo $link['title']; ?></a>
-
-                                <?php endif;
-
-                            endwhile;
-
-                        endif;
-
-                        ?>
-                    </article>
                 </section>
 
                 <section>
@@ -57,8 +48,8 @@ get_header();
 
         <?php endwhile; endif; ?>
 
-
 </div>
+
 
 <?php
 get_footer();

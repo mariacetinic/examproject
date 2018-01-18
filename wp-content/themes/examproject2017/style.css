@@ -68,23 +68,53 @@ font-family: 'Gloria Hallelujah', cursive;
 
 */
 
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Gloria Hallelujah', cursive;
+    color: #b561dd;
+    margin: 16px 0;
+}
 
 a{
     text-decoration: none;
+    color: #333;
 }
 
-h1 a{
-    font-family: 'Gloria Hallelujah', cursive;
-    color: #fff;
-}
-
-h2{
-    font-family: 'Gloria Hallelujah', cursive;
+a:hover{
     color: #b561dd;
 }
 
-h3{
+a:active{
+    color: #dfa8fb;
+}
 
+h1{
+    font-size: 3rem;
+}
+
+h1.sans{
+    font-family: 'Roboto', sans-serif;
+    font-size: 3rem;
+    color: #333;
+    text-transform: uppercase;
+}
+
+h2{
+    font-size: 2rem;
+    color: #b561dd;
+}
+
+h2.sans{
+    font-family: 'Roboto', sans-serif;
+    font-size: 2rem;
+    color: #333;
+    font-weight: 300;
+}
+
+h3{
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    font-size: 1.5rem;
+    font-weight: 400;
 }
 
 h4{
@@ -100,13 +130,29 @@ h6{
 }
 
 p{
+    font-size: 1.0rem;
+    line-height: 28px;
+    font-weight: 300;
 
+}
+
+#container{
+    width: 100%;
+    margin: auto;
+}
+
+#container #content{
+    width: 80%;
+    margin: auto;
 }
 
 .container-skinny{
     width: 70%;
     margin: auto;
-    background-color: red;
+}
+
+article .hero-images{
+    margin-bottom: 100px;
 }
 
 /*
@@ -128,10 +174,20 @@ p{
     object-fit: cover;
     height: 500px;
 }
+
+.overlay-hero-title{
+    position: absolute;
+    color: #fff;
+    text-align: center;
+    top: 40%;
+    right: 20%;
+    /*transform: translate(-50%, -50%);*/
+
+}
 /*
 ******************************************
 ******************************************
-****************** BACKGROUND AND TEXT COLORS
+****************** BACKGROUND AND TEXT COLORS & BUTTONS
 ******************************************
 ******************************************
 */
@@ -142,6 +198,65 @@ p{
 
 .grey-bg-color{
     background-color: #f8f8f8;
+}
+
+button{
+    background-color: #b561dd;
+    border: none;
+    padding: 16px 32px;
+    font-size: 1em;
+    text-transform: uppercase;
+}
+
+button a{
+    color: #fff;
+}
+
+.woocommerce a.button.alt:hover{
+    background-color: black;
+}
+
+
+/*
+******************************************
+******************************************
+****************** WOOCOMMERCE
+******************************************
+******************************************
+*/
+
+.woocommerce-account .woocommerce-MyAccount-navigation li{
+    display: block;
+    padding: 10px 0 6px 5px;
+    border-bottom: 1px solid #dfa8fb;
+}
+
+.woocommerce-account .woocommerce-MyAccount-navigation ul{
+    width: 50%;
+}
+
+.woocommerce div.product .product_title{
+    margin-bottom: 70px;
+}
+
+.woocommerce .woocommerce-breadcrumb{
+    margin: 20px 1em;
+}
+
+.woocommerce #respond input#submit.alt, .woocommerce a.button.alt, .woocommerce button.button.alt, .woocommerce input.button.alt{
+    background-color: orange
+}
+
+.woocommerce #respond input#submit.alt, .woocommerce a.button.alt, .woocommerce button.button.alt, .woocommerce input.button.alt{
+    
+}
+
+.woocommerce div.product form.cart .button{
+    float: right;
+}
+
+.woocommerce div.product form.cart{
+    margin-top: 5em;
 }
 /*
 ******************************************
@@ -209,7 +324,9 @@ p{
     padding-top: 5px;
 }
 
-
+#customer a:hover{
+    color: #f8f8f8;
+}
 
 
 /*
@@ -235,11 +352,11 @@ p{
 
 #menu-main-menu li a{
     text-transform: uppercase;
-    color: #333;
+
 }
 
-#menu-main-menu li a:nth-child(4){
-    color: red; /*varför funkar det inteeeee*/
+#menu-main-menu li:nth-child(4) a{
+    color: red;
 }
 
 
@@ -259,7 +376,7 @@ p{
 
 
 #subscription{
-    width: 40%;
+    width: 50%;
     margin: auto;
     text-align: center;
     padding: 100px 0;
@@ -278,6 +395,48 @@ p{
 ******************************************
 */
 
+
+
+    /*
+    ******************************************
+    ******************************************
+    ****************** ABOUT US PAGE
+    ******************************************
+    ******************************************
+    */
+.aboutus{
+    display: flex;
+}
+
+.aboutus section:nth-child(1) {
+    width: 40%;
+}
+
+.aboutus section:nth-child(2){
+    width: 60%;
+    margin-top: 70px;
+}
+
+#menu-aside-menu ul{
+    width: 50%;
+}
+
+#menu-aside-menu li{
+    display: block;
+    padding: 18px 0 6px 5px;
+    border-bottom: 1px solid #dfa8fb;
+    cursor: pointer;
+}
+
+#menu-aside-menu li:hover{
+    background-color: #f8f8f8;
+}
+
+.my_custom_aside{
+    padding-right: 60%;
+}
+
+
 img{
     width: 100%;
 }
@@ -293,16 +452,13 @@ img{
 #footer{
     width: 100%;
     padding: 60px 100px;
-    box-sizing: border-box
+    box-sizing: border-box;
+    margin-top: 100px;
 }
 
 #footer-content{
     display: flex;
     justify-content: space-between;
-}
-
-h2{
-    margin: 0;
 }
 
 h2 a{
@@ -326,8 +482,4 @@ h2 a{
 
 .footer-item ul li{
     line-height: 24px;
-}
-
-.footer-item ul li a{
-    color: #333;
 }

@@ -4,16 +4,16 @@
 
 <div id="footer-content">
     <div class="footer-item">
-        <h5>Assortment</h5>
+        <h4>Assortment</h4>
         <?php wp_nav_menu( array( 'theme_location' => 'footer-menu-1', 'container_class' => 'footer-item' ) ); ?>
     </div>
     <div class="footer-item">
-        <h5>Customer service</h5>
+        <h4>Customer service</h4>
         <?php wp_nav_menu( array( 'theme_location' => 'footer-menu-2', 'container_class' => 'my_extra_menu_class' ) ); ?>
     </div>
 
     <div class="footer-item">
-        <h5>Follow us</h5>
+        <h4>Follow us</h4>
         <?php wp_nav_menu( array( 'theme_location' => 'footer-menu-3', 'container_class' => 'my_extra_menu_class' ) ); ?>
     </div>
 
@@ -25,7 +25,26 @@
 </div>
 
 </footer>
-</div>
+
+
+    <?php
+    if( get_field('banks') ):
+        $attachment_id = get_field('banks');
+        $size = "full"; // (thumbnail, medium, large, full or custom size)
+        $image = wp_get_attachment_image_src( $attachment_id, $size );
+        $alt_text = get_post_meta($attachment_id , '_wp_attachment_image_alt', true);
+        ?>
+        <img alt="<?php echo $alt_text; ?>" src="<?php echo $image[0]; ?>" />
+
+
+        <?php
+
+    else:
+        ?>
+
+    <?php endif;?>
+
 <?php wp_footer(); ?>
+
 </body>
 </html>
