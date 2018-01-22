@@ -36,4 +36,18 @@ function dwwp_admin_enqueue_scripts() {
 //styles som används endast i admin, ta en hook som anpassar sig efter det.
 add_action('admin_enqueue_scripts', 'dwwp_admin_enqueue_scripts');
 
-//för front-end används en annan hook
+//rest router (används ej i nuläget)
+add_action( 'rest_api_init', function () {
+    register_rest_route( 'examplugin/v1', '/box/(?P<id>\d+)', array(
+        'methods' => 'GET',
+        'callback' => 'ep_add_box_to_cart',
+    ) );
+} );
+
+function ep_add_box_to_cart($data) {
+    //return wp_safe_redirect(WC()->cart->get_cart_url());
+    $products = get_field('box_products', $data['id']);
+    foreach ($products as $product) {
+        WC()->cart->add_to_cart( $product->ID );
+    }
+}

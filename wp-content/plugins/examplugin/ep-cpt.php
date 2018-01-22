@@ -154,4 +154,4 @@ function dwwp_load_templates() {
 
 //template include är säkraste sättet
 //tar template include för att hålla mig inom wordpress template hiearchies gränserna
-add_action( 'template_include', 'dwwp_load_templates' );
+//add_action( 'template_include', 'dwwp_load_templates' );
