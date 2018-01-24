@@ -7,6 +7,8 @@ if (isset($_POST) && isset($_POST['box_id'])) {
 
     wp_safe_redirect(wc_get_cart_url());
 }
+//knappen fungerar inte..
+
 get_header(); ?>
 
     <section id="content" class="product-content" role="main">
@@ -37,7 +39,7 @@ get_header(); ?>
                 </article>
                 <form action="<?php the_permalink() ?>" method="post">
                     <input type="hidden" name="box_id" value="<?= $post->ID ?>">
-                    <button type="submit">Add box to cart</button>
+                    <button type="submit">Add to cart</button>
                 </form>
             </section>
 
