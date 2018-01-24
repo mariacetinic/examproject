@@ -7,7 +7,7 @@ if (isset($_POST) && isset($_POST['box_id'])) {
 
     wp_safe_redirect(wc_get_cart_url());
 }
-//knappen fungerar inte..
+//knappen fungerar inte.. om man inte har produkter i.. såklart. 
 
 get_header(); ?>
 

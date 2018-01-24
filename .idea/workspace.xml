@@ -38,7 +38,7 @@
         <entry file="file://$PROJECT_DIR$/wp-content/themes/examproject2017/single-box.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="135">
-              <caret line="9" column="25" lean-forward="false" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
+              <caret line="9" column="65" lean-forward="false" selection-start-line="9" selection-start-column="65" selection-end-line="9" selection-end-column="65" />
               <folding />
             </state>
           </provider>
@@ -314,12 +314,12 @@
       <updated>1516630045941</updated>
       <workItem from="1516630047091" duration="5674000" />
       <workItem from="1516712498263" duration="2541000" />
-      <workItem from="1516792772876" duration="2435000" />
+      <workItem from="1516792772876" duration="2486000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10650000" />
+    <option name="totallyTimeSpent" value="10701000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="404" y="0" width="1036" height="896" extended-state="0" />
@@ -469,7 +469,7 @@
     <entry file="file://$PROJECT_DIR$/wp-content/themes/examproject2017/single-box.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
-          <caret line="9" column="25" lean-forward="false" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
+          <caret line="9" column="65" lean-forward="false" selection-start-line="9" selection-start-column="65" selection-end-line="9" selection-end-column="65" />
           <folding />
         </state>
       </provider>
