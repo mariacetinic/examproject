@@ -77,6 +77,7 @@ h1, h2, h3, h4, h5, h6{
 a{
     text-decoration: none;
     color: #333;
+    transition: color .1s ease-in;
 }
 
 a:hover{
@@ -200,17 +201,22 @@ article .hero-images{
     background-color: #f8f8f8;
 }
 
-button{
-    background-color: #b561dd;
+.button{
     border: none;
     padding: 16px 32px;
     font-size: 1em;
     text-transform: uppercase;
+    color: #fff;
+    display: inline-block;
+    background-color: #b561dd;
+    transition: background-color .3s ease-out;
 }
 
-button a{
+.button:hover{
     color: #fff;
+    background-color: #7e5a9b;
 }
+
 
 .woocommerce a.button.alt:hover{
     background-color: black;
@@ -258,6 +264,63 @@ button a{
 .woocommerce div.product form.cart{
     margin-top: 5em;
 }
+
+/*
+******************************************
+******************************************
+****************** CUSTOM POST TYPE
+******************************************
+******************************************
+*/
+
+#all-boxes{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box-img img{
+    width: 100%;
+    border: 1px solid lightgray;
+}
+
+
+.box-container{
+    width: 23%;
+    margin: 0 1%;
+
+}
+
+.product-content{
+    display: flex;
+    padding-top: 30px;
+}
+
+
+.product-right{
+    width: 40%;
+}
+
+.product-left{
+    width: 40%;
+    margin-left: 10%;
+    padding-bottom: 110px;
+}
+
+.product-left form{
+    text-align: right;
+}
+
+/*
+funkar inte
+.box-container{
+    flex: 1 0 280px;
+}
+
+.box-container:last-child{
+    flex: 0 0 280px;
+}
+*/
+
 /*
 ******************************************
 ******************************************
