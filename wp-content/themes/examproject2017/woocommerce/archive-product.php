@@ -22,6 +22,8 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 get_header( 'shop' ); ?>
 
+
+
 <?php
 /**
  * woocommerce_before_main_content hook.
@@ -37,7 +39,7 @@ do_action( 'woocommerce_before_main_content' );
 
     <?php if ( apply_filters( 'woocommerce_show_page_title', true ) ) : ?>
 
-        <h1 class="woocommerce-products-header__title page-title"><?php woocommerce_page_title(); ?></h1>
+        <h1 class="woocommerce-products-header__title page-title"><?php //woocommerce_page_title(); ?></h1>
 
     <?php endif; ?>
 
@@ -52,8 +54,10 @@ do_action( 'woocommerce_before_main_content' );
     ?>
 
 </header>
-    
+
+
 <?php if ( have_posts() ) : ?>
+
 
     <?php
     /**
@@ -69,8 +73,20 @@ do_action( 'woocommerce_before_main_content' );
     <?php woocommerce_product_loop_start(); ?>
 
     <?php woocommerce_product_subcategories(); ?>
-
+    <section class="archive-box">
+        <section id="box-sidebar">
+            <?php
+            /**
+             * woocommerce_sidebar hook.
+             *
+             * @hooked woocommerce_get_sidebar - 10
+             */
+            do_action( 'woocommerce_sidebar' );
+            ?>
+        </section>
+        <section class="custom-woocommerce-product-listing">
     <?php while ( have_posts() ) : the_post(); ?>
+
 
         <?php
         /**
@@ -86,7 +102,8 @@ do_action( 'woocommerce_before_main_content' );
     <?php endwhile; // end of the loop. ?>
 
     <?php woocommerce_product_loop_end(); ?>
-
+        </section>
+</section>
     <?php
     /**
      * woocommerce_after_shop_loop hook.
@@ -118,13 +135,5 @@ do_action( 'woocommerce_before_main_content' );
 do_action( 'woocommerce_after_main_content' );
 ?>
 
-<?php
-/**
- * woocommerce_sidebar hook.
- *
- * @hooked woocommerce_get_sidebar - 10
- */
-do_action( 'woocommerce_sidebar' );
-?>
 
 <?php get_footer( 'shop' ); ?>

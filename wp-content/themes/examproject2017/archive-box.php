@@ -42,7 +42,7 @@
                     <div class="product-cost">
                         <a href="<?php the_permalink(); ?>"><h2 class="sans"><?php the_title(); ?></h2></a>
 
-                        <span class="sans price-stock"><?php the_field('box_price'); ?>&nbsp;kr | <?php the_field('box_stock'); ?></span>
+                        <span class="sans price-stock"><?php the_field('box_price'); ?>&nbsp;kr</span>
 
                     </div>
                     <a href="<?php the_permalink(); ?>"><button>View box</button></a>
