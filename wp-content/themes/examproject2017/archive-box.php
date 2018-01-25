@@ -1,6 +1,6 @@
 
 <?php get_header(); ?>
-    <section id="content" role="main">
+    <section id="content" class="archive-box" role="main">
         <header class="header">
             <h1 class="entry-title">
                 <?php
@@ -16,7 +16,8 @@
                 */?>
             </h1>
         </header>
-        <section id="sidebar">
+
+        <section id="box-sidebar">
             <?php get_sidebar(); ?>
         </section>
         <section id="all-boxes">

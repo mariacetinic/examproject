@@ -142,7 +142,7 @@ p{
     margin: auto;
 }
 
-#container #content{
+#container #content, .container{
     width: 80%;
     margin: auto;
 }
@@ -215,7 +215,7 @@ article .hero-images{
 
 .button:hover, button:hover{
     color: #fff;
-    background-color: #7e5a9b;
+    background-color: #dfa8fb;
 }
 
 
@@ -274,9 +274,14 @@ article .hero-images{
 ******************************************
 */
 
+.archive-box{
+    display: flex;
+}
+
 #all-boxes{
     display: flex;
     flex-wrap: wrap;
+    width: 80%;
 }
 
 .box-img{
@@ -338,9 +343,38 @@ article .hero-images{
     justify-content: space-between;
 }
 
+.product-left h1{
+    margin-bottom: 30px;
+}
+
 .product-left form{
     text-align: right;
 }
+
+.price-stock-item{
+    text-align: right;
+}
+.price-stock-item span {
+    font-style: italic;
+    color: #dfa8fb;
+}
+
+.custom-product-list{
+    border-top: 1px solid #f4f4f4;
+    padding: 20px;
+    background-color: #f8f8f8;
+}
+
+.custom-product-list li{
+    display: block;
+    height: 30px;
+}
+
+.custom-product-list li a{
+    font-style: italic;
+
+}
+
 
 /*
 funkar inte
@@ -352,6 +386,38 @@ funkar inte
     flex: 0 0 280px;
 }
 */
+
+/*
+******************************************
+******************************************
+****************** SIDEBAR
+******************************************
+******************************************
+*/
+
+#box-sidebar{
+    width: 15%;
+    margin-top: 25px;
+    padding-right: 5%;
+}
+
+h3.widget-title{
+    font-family: 'Roboto', sans-serif;
+    color: #dfa8fb;
+    font-size: 1.2rem;
+    font-weight: 300;
+    border-bottom: 1px solid #dfa8fb;
+    padding-bottom: 10px;
+}
+
+.product-categories li{
+    padding-bottom: 10px;
+}
+
+.product-categories li a, .count{
+    font-weight: 300;
+
+}
 
 /*
 ******************************************
