@@ -7,7 +7,7 @@ if (isset($_POST) && isset($_POST['box_id'])) {
 
     wp_safe_redirect(wc_get_cart_url());
 }
-//knappen fungerar inte.. om man inte har produkter i.. såklart. 
+//knappen fungerar inte.. om man inte har produkter i.. såklart.
 
 get_header(); ?>
 
@@ -33,7 +33,7 @@ get_header(); ?>
 
                 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
                     <header class="header">
-                        <h1 class="entry-title"><?php the_title(); ?></h1> <?php edit_post_link(); ?>
+                        <h1 class="entry-title"><?php the_title(); ?></h1>
                     </header>
                 <?php the_field('short_description'); ?>
                 </article>

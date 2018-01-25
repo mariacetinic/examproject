@@ -56,11 +56,11 @@
     <!-- att använda span istället för i är mer semantiskt korrekt. -->
     <div id="customer">
        <div class="customericon">
-       <span class="fa fa-user-circle fa-2x white-color" aria-hidden="true"></span>
+       <span class="fa fa-user-circle custom-fa-size white-color" aria-hidden="true"></span>
         <a class="white-color" href="#">Log In</a>
        </div>
        <div class="customericon">
-        <span class="fa fa-shopping-basket fa-2x white-color" aria-hidden="true"></span>
+        <span class="fa fa-shopping-basket custom-fa-size white-color" aria-hidden="true"></span>
         <a class="white-color" href="#">Cart</a>
        </div>
     </div>

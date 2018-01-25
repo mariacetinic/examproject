@@ -198,10 +198,10 @@ article .hero-images{
 }
 
 .grey-bg-color{
-    background-color: #f8f8f8;
+    background-color: #f4f4f4;
 }
 
-.button{
+.button, button{
     border: none;
     padding: 16px 32px;
     font-size: 1em;
@@ -210,9 +210,10 @@ article .hero-images{
     display: inline-block;
     background-color: #b561dd;
     transition: background-color .3s ease-out;
+    cursor: pointer;
 }
 
-.button:hover{
+.button:hover, button:hover{
     color: #fff;
     background-color: #7e5a9b;
 }
@@ -290,6 +291,10 @@ article .hero-images{
 
 }
 
+.box-container h2{
+    font-size: 1em;
+}
+
 .product-content{
     display: flex;
     padding-top: 30px;
@@ -304,6 +309,9 @@ article .hero-images{
     width: 40%;
     margin-left: 10%;
     padding-bottom: 110px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .product-left form{
@@ -363,6 +371,10 @@ funkar inte
     background-color: #b561dd;
 }
 
+#branding #logo img{
+    width: 90px;
+}
+
 #searchsubmit{
     vertical-align: top;
 }
@@ -391,6 +403,9 @@ funkar inte
     color: #f8f8f8;
 }
 
+.custom-fa-size{
+    font-size: 1.5em;
+}
 
 /*
 ******************************************
