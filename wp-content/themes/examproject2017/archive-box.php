@@ -1,12 +1,3 @@
-<?php
-if (isset($_POST) && isset($_POST['box_id'])) {
-    $products = get_field('box_products', $_POST['box_id']);
-    foreach ($products as $product) {
-        WC()->cart->add_to_cart( $product->ID );
-    }
-
-    wp_safe_redirect(wc_get_cart_url());
-} ?>
 
 <?php get_header(); ?>
     <section id="content" role="main">
@@ -40,11 +31,17 @@ if (isset($_POST) && isset($_POST['box_id'])) {
                         </div>
                     <?php endif; ?>
 
-                    <a href="<?php the_permalink(); ?>"><h2><?php the_title(); ?></h2></a>
-                    <form action="<?php the_permalink() ?>" method="post">
-                        <input type="hidden" name="box_id" value="<?= $post->ID ?>">
-                        <button type="submit">Add to cart</button>
-                    </form>
+
+
+                    <div class="product-cost">
+                        <a href="<?php the_permalink(); ?>"><h2 class="sans"><?php the_title(); ?></h2></a>
+
+                        <span class="sans price-stock"><?php the_field('box_price'); ?>&nbsp;kr | <?php the_field('box_stock'); ?></span>
+
+                    </div>
+                    <a href="<?php the_permalink(); ?>"><button>View box</button></a>
+
+
                 </div>
 
             <?php endwhile; endif; ?>
