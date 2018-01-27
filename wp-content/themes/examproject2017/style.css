@@ -352,6 +352,29 @@ article .hero-images{
 .entry-title{
     margin-bottom: 60px;
 }
+
+.woocommerce ul.order_details li strong{
+    font-weight: 400;
+}
+
+.woocommerce-order-details h2, .woocommerce-customer-details h2{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+
+.woocommerce table.shop_table tbody th, .woocommerce table.shop_table tfoot td, .woocommerce table.shop_table tfoot th{
+    font-weight: 500;
+}
+
+.woocommerce table.shop_table td{
+    padding: 20px 12px;
+}
+
+.woocommerce table.shop_table tfoot th{
+    padding-top: 20px;
+
+    padding-bottom: 20px;
+}
 /*
 ******************************************
 ******************************************
