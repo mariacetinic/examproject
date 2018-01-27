@@ -150,10 +150,7 @@ p{
 .container-skinny{
     width: 70%;
     margin: auto;
-}
-
-article .hero-images{
-    margin-bottom: 100px;
+   padding-top: 100px;
 }
 
 /*
@@ -260,7 +257,7 @@ article .hero-images{
     background-color: transparent;
 }
 
-.woocommerce #respond input#submit, .woocommerce a.button, .woocommerce button.button, .woocommerce input.button{
+.woocommerce #respond input#submit, .woocommerce a.button, .woocommerce button.button, .woocommerce input.button, .wpcf7-submit{
     border: none;
     padding: 10px 32px;
     font-size: 1em;
@@ -273,7 +270,7 @@ article .hero-images{
     border-radius: 0;
 }
 
-.woocommerce #respond input#submit:hover, .woocommerce a.button:hover, .woocommerce button.button:hover, .woocommerce input.button:hover{
+.woocommerce #respond input#submit:hover, .woocommerce a.button:hover, .woocommerce button.button:hover, .woocommerce input.button:hover, .wpcf7-submit:hover {
     color: #fff;
     background-color: #dfa8fb;
 }
@@ -451,7 +448,10 @@ article .hero-images{
     background-color: #b561dd;
     color: #fff;
     font-weight: 400;
+    font-family: 'Roboto', sans-serif;
 }
+
+
 .product-content{
     display: flex;
     padding-top: 30px;
@@ -480,6 +480,7 @@ article .hero-images{
 .woocommerce ul.products li.product .price{
     text-align: center;
     font-weight: 500;
+    font-family: 'Roboto', sans-serif;
 }
 
 .woocommerce ul.products li.product, .woocommerce-page ul.products li.product{
@@ -766,6 +767,16 @@ h3.widget-title{
     margin-top: 70px;
 }
 
+.aboutus section:nth-child(2) p {
+    margin-bottom: 50px;
+}
+
+.qa h3{
+    border-bottom: 1px solid #cdcdcd;
+    padding-bottom: 15px;
+
+}
+
 #menu-aside-menu ul{
     width: 50%;
 }
@@ -790,6 +801,19 @@ img{
     width: 100%;
 }
 
+/*
+******************************************
+******************************************
+****************** FORM
+******************************************
+******************************************
+*/
+
+.wpcf7-validates-as-required, .wpcf7-text, .wpcf7-textarea{
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+}
 /*
 ******************************************
 ******************************************
