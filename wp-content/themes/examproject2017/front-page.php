@@ -37,27 +37,37 @@
     </div>
 </div>
 
-<div class="hero-images">
+<div class="icons-section">
     <?php
-        if( get_field('second_hero') ):
-            $attachment_id = get_field('second_hero');
-            $size = "full"; // (thumbnail, medium, large, full or custom size)
-            $image = wp_get_attachment_image_src( $attachment_id, $size );
-            $alt_text = get_post_meta($attachment_id , '_wp_attachment_image_alt', true);
-            ?>
-                    <img alt="<?php echo $alt_text; ?>" src="<?php echo $image[0]; ?>" />
 
-            <?php
+    // check if the repeater field has rows of data
+    if( have_rows('description_of_mydog') ): while ( have_rows('description_of_mydog') ) : the_row();
 
-        else:
-            ?>
+            // display a sub field value
+            $icon = get_sub_field('icon');
+            $title = get_sub_field('title');
+            $text = get_sub_field('text'); ?>
 
-    <?php endif;?>
+        <div class="icon-item">
+            <img src="<?php echo $icon['url']; ?>" alt="<?php echo $icon['alt'] ?>" />
+
+            <h2><?php echo $title ?></h2>
+            <p><?php echo $text ?></p>
+        </div>
+
+    <?php
+
+            endwhile;
+        else :
+    endif;
+
+    ?>
 </div>
 
 <section id="subscription">
     <h1><?php the_field('header_sub'); ?></h1>
     <?php the_field('content_sub'); ?>
+    <?php the_field('sale_products'); ?>
 </section>
 
 <?php get_footer(); ?>

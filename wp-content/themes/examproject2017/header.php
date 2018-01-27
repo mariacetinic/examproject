@@ -39,7 +39,7 @@
         <span class="fa fa-shopping-basket custom-fa-size white-color" aria-hidden="true"></span>
         <a class="white-color" href="#"></a>
            <a class="cart-customlocation white" href="<?php echo wc_get_cart_url(); ?>" title="<?php _e( 'View your shopping cart' ); ?>">
-               <?php echo sprintf ( _n( '%d', '%d', WC()->cart->get_cart_contents_count() ), WC()->cart->get_cart_contents_count() ); ?> - <?php echo WC()->cart->get_cart_total(); ?>
+               <?php echo sprintf ( _n( '%d', '%d', WC()->cart->get_cart_contents_count() ), WC()->cart->get_cart_contents_count() ); ?> | <?php echo WC()->cart->get_cart_total(); ?>
            </a>
        </div>
     </div>

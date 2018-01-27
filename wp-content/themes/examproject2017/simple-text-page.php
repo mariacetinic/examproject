@@ -31,7 +31,8 @@ get_header();
                     </article>
                     <?php
                     if ( !wp_is_mobile() ) {
-                        ?><article>
+                        ?>
+                        <article>
                             <?php wp_nav_menu( array( 'theme_location' => 'aside-menu-1', 'container_class' => 'my_custom_aside' ) ); ?>
                         </article>
                     <?php }
