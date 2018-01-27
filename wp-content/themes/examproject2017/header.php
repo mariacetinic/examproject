@@ -16,9 +16,24 @@
 <div id="wrapper" class="hfeed">
 <header id="header" role="banner">
 <section id="top-menu" class="grey-bg-color">
-    <span>Free delivery from 300kr | 1-2 days delivery | Save time and energy</span>
+    <span id="top-text">Free delivery from 300kr | 1-2 days delivery | Save time and energy</span>
+    <div class="menu-customer-item">
+        <div class="loginicon">
+            <a class="" href="#"><span class="fa fa-headphones custom-fa-size" aria-hidden="true"></span>070 979 68 76</a>
+            <?php if ( is_user_logged_in() ) { ?>
+                <a href="<?php echo get_permalink( get_option('woocommerce_myaccount_page_id') ); ?>" title="<?php _e('My Account','woothemes'); ?>"><span class="fa fa-user-circle custom-fa-size" aria-hidden="true"></span><?php _e('My Account','woothemes'); ?></a>
+            <?php }
+            else { ?>
+                <a href="<?php echo get_permalink( get_option('woocommerce_myaccount_page_id') ); ?>" title="<?php _e('Login / Register','woothemes'); ?>"><span class="fa fa-user-circle custom-fa-size" aria-hidden="true"></span><?php _e('Login / Register','woothemes'); ?></a>
+            <?php } ?>
+        </div>
+    </div>
 </section>
+
 <section id="branding">
+    <div id="navbars">
+        <a href="#"><i class="fa fa-bars white-color" aria-hidden="true"></i></a>
+    </div>
     <div id="logo">
         <?php if ( is_front_page() || is_home() || is_front_page() && is_home() ) { echo ''; } ?>
             <a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_html( get_bloginfo( 'name' ) ); ?>" rel="home"><?php echo esc_html( get_bloginfo( 'name' ) ); ?>
@@ -46,26 +61,33 @@
     </div>
 
 </section>
-<nav id="menu" class="grey-bg-color" role="navigation">
-<?php wp_nav_menu( array( 'theme_location' => 'main-menu' ) ); ?>
-<div id="menu-customer-items">
-    <div class="menu-customer-item">
+    <div id="nav-mobile">
+        <?php wp_nav_menu( array( 'theme_location' => 'main-menu' ) ); ?>
+        <?php get_search_form(); ?>
 
-    <a class="" href="#"><span class="fa fa-headphones custom-fa-size" aria-hidden="true"></span>070 979 68 76</a>
     </div>
-    &nbsp;&nbsp;&nbsp;
-    <div class="menu-customer-item">
-        <div class="loginicon">
 
-        <?php if ( is_user_logged_in() ) { ?>
-            <a href="<?php echo get_permalink( get_option('woocommerce_myaccount_page_id') ); ?>" title="<?php _e('My Account','woothemes'); ?>"><span class="fa fa-user-circle custom-fa-size" aria-hidden="true"></span><?php _e('My Account','woothemes'); ?></a>
-        <?php }
-        else { ?>
-            <a href="<?php echo get_permalink( get_option('woocommerce_myaccount_page_id') ); ?>" title="<?php _e('Login / Register','woothemes'); ?>"><span class="fa fa-user-circle custom-fa-size" aria-hidden="true"></span><?php _e('Login / Register','woothemes'); ?></a>
-        <?php } ?>
+<nav id="menu" class="grey-bg-color" role="navigation">
+    <?php wp_nav_menu( array( 'theme_location' => 'main-menu' ) ); ?>
+
+    <div id="menu-customer-items">
+        <div class="menu-customer-item">
+
+        <a class="" href="#"><span class="fa fa-headphones custom-fa-size" aria-hidden="true"></span>070 979 68 76</a>
+        </div>
+        &nbsp;&nbsp;&nbsp;
+        <div class="menu-customer-item">
+            <div class="loginicon">
+
+            <?php if ( is_user_logged_in() ) { ?>
+                <a href="<?php echo get_permalink( get_option('woocommerce_myaccount_page_id') ); ?>" title="<?php _e('My Account','woothemes'); ?>"><span class="fa fa-user-circle custom-fa-size" aria-hidden="true"></span><?php _e('My Account','woothemes'); ?></a>
+            <?php }
+            else { ?>
+                <a href="<?php echo get_permalink( get_option('woocommerce_myaccount_page_id') ); ?>" title="<?php _e('Login / Register','woothemes'); ?>"><span class="fa fa-user-circle custom-fa-size" aria-hidden="true"></span><?php _e('Login / Register','woothemes'); ?></a>
+            <?php } ?>
+            </div>
         </div>
     </div>
-</div>
 </nav>
 </header>
 <div id="container">

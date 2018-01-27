@@ -180,3 +180,48 @@
     }
 
 }
+
+@media all and (max-width: 500px) {
+
+/*
+******************************************
+******************************************
+****************** HEADER
+******************************************
+******************************************
+*/
+    #menu, #top-menu #top-text, #search{
+        display: none;
+    }
+
+    #nav-mobile{
+        display: block;
+        background-color: #f8f8f8;
+        position: relative;
+        z-index: 1;
+        padding: 10px 10px;
+    }
+
+    .menu-customer-item{
+        width: 90%;
+    }
+
+    .loginicon{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #navbars{
+        display: block;
+    }
+
+    #menu-main-menu li{
+        display: block;
+        padding: 20px 20px;
+    }
+
+    #s{
+        background-color: #fff;
+    }
+
+}

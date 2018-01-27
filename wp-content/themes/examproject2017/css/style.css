@@ -56,6 +56,9 @@ table{
     border-spacing:0
 }
 
+#navbars{
+    display: none;
+}
 /*
 ******************************************
 ******************************************
@@ -150,6 +153,10 @@ p{
     width: 70%;
     margin: auto;
    padding-top: 100px;
+}
+
+#nav-mobile{
+    display: none;
 }
 
 /*
@@ -655,6 +662,7 @@ h3.widget-title{
     padding: 10px 140px;
     text-align: center;
     width: 70%;
+    box-sizing: border-box;
 }
 
 #shoppingcart{
