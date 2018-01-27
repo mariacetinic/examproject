@@ -15,28 +15,7 @@
 <div id="wrapper" class="hfeed">
 <header id="header" role="banner">
 <section id="top-menu" class="grey-bg-color">
-    <?php
-
-    if( have_rows('contact_info') ):
-
-        while( have_rows('contact_info') ) : the_row();
-
-            $value = get_sub_field('contact_text');
-
-            echo $value . '|';
-
-        endwhile;
-
-    endif;
-
-
-
-    //vill ta bort sista tecknet
-    //rtrim($values, '|');
-    //echo substr($value, 0, -1);
-
-    //echo substr_replace($value ,"",-1);
-    ?>
+    <span>Free delivery from 300kr | 1-2 days delivery | Save time and energy</span>
 </section>
 <section id="branding">
     <div id="logo">
@@ -54,16 +33,13 @@
     </div>
 
     <!-- att använda span istället för i är mer semantiskt korrekt. -->
-    <div id="customer">
-       <div class="customericon">
-       <span class="fa fa-user-circle custom-fa-size white-color" aria-hidden="true"></span>
-        <a class="white-color" href="#">Log In</a>
-       </div>
+    <div id="shoppingcart">
+
        <div class="customericon">
         <span class="fa fa-shopping-basket custom-fa-size white-color" aria-hidden="true"></span>
-        <a class="white-color" href="#">Cart</a>
+        <a class="white-color" href="#"></a>
            <a class="cart-customlocation white" href="<?php echo wc_get_cart_url(); ?>" title="<?php _e( 'View your shopping cart' ); ?>">
-               <?php echo sprintf ( _n( '%d item', '%d items', WC()->cart->get_cart_contents_count() ), WC()->cart->get_cart_contents_count() ); ?> - <?php echo WC()->cart->get_cart_total(); ?>
+               <?php echo sprintf ( _n( '%d', '%d', WC()->cart->get_cart_contents_count() ), WC()->cart->get_cart_contents_count() ); ?> - <?php echo WC()->cart->get_cart_total(); ?>
            </a>
        </div>
     </div>
@@ -73,13 +49,14 @@
 <?php wp_nav_menu( array( 'theme_location' => 'main-menu' ) ); ?>
 <div id="menu-customer-items">
     <div class="menu-customer-item">
-    <span class="fa fa-headphones" aria-hidden="true"></span>&nbsp;
-    <a class="" href="#">070 979 68 76</a>
+
+    <a class="" href="#"><span class="fa fa-headphones custom-fa-size" aria-hidden="true"></span>070 979 68 76</a>
     </div>
     &nbsp;&nbsp;&nbsp;
     <div class="menu-customer-item">
-    <span class="fa fa-envelope" aria-hidden="true"></span>&nbsp;
-    <a class="" href="#">contact@mydog.com</a>
+        <div class="loginicon">
+            <a href="#"><span class="fa fa-user-circle custom-fa-size" aria-hidden="true"></span>Log In</a>
+        </div>
     </div>
 </div>
 </nav>

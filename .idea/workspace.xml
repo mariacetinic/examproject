@@ -4,7 +4,6 @@
     <list default="true" id="c47ef531-4788-4eb7-b400-fec5af831071" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/examproject2017/header.php" afterPath="$PROJECT_DIR$/wp-content/themes/examproject2017/header.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/examproject2017/page.php" afterPath="$PROJECT_DIR$/wp-content/themes/examproject2017/page.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wp-content/themes/examproject2017/style.css" afterPath="$PROJECT_DIR$/wp-content/themes/examproject2017/style.css" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -17,11 +16,31 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="header.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="header.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/wp-content/themes/examproject2017/header.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="416">
-              <caret line="65" column="147" lean-forward="true" selection-start-line="65" selection-start-column="147" selection-end-line="65" selection-end-column="147" />
+            <state relative-caret-position="545">
+              <caret line="54" column="22" lean-forward="false" selection-start-line="54" selection-start-column="22" selection-end-line="54" selection-end-column="22" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="single-box.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/examproject2017/single-box.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="222">
+              <caret line="40" column="28" lean-forward="true" selection-start-line="40" selection-start-column="28" selection-end-line="40" selection-end-column="44" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="front-page.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wp-content/themes/examproject2017/front-page.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="182">
+              <caret line="31" column="103" lean-forward="false" selection-start-line="31" selection-start-column="103" selection-end-line="31" selection-end-column="103" />
               <folding />
             </state>
           </provider>
@@ -37,11 +56,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wp-content/themes/examproject2017/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="449">
-              <caret line="31" column="13" lean-forward="false" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
+            <state relative-caret-position="413">
+              <caret line="611" column="13" lean-forward="false" selection-start-line="611" selection-start-column="13" selection-end-line="611" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -51,11 +70,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>all-boxes</find>
-      <find>container-box</find>
-      <find>c</find>
-      <find>box-img</find>
-      <find>the_content</find>
       <find>box-container</find>
       <find>logo</find>
       <find>.grey-bg-color</find>
@@ -81,6 +95,11 @@
       <find>.button</find>
       <find>woocomm</find>
       <find>colors</find>
+      <find>customer</find>
+      <find>.custom-fa-size</find>
+      <find>#customer a</find>
+      <find>#s{</find>
+      <find>customerico</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -99,8 +118,8 @@
         <option value="$PROJECT_DIR$/wp-content/themes/examproject2017/archive-box.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/examproject2017/woocommerce/archive-product.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/examproject2017/page.php" />
-        <option value="$PROJECT_DIR$/wp-content/themes/examproject2017/header.php" />
         <option value="$PROJECT_DIR$/wp-content/themes/examproject2017/style.css" />
+        <option value="$PROJECT_DIR$/wp-content/themes/examproject2017/header.php" />
       </list>
     </option>
   </component>
@@ -544,12 +563,12 @@
       <workItem from="1516712498263" duration="2541000" />
       <workItem from="1516792772876" duration="2958000" />
       <workItem from="1516876459886" duration="12998000" />
-      <workItem from="1517069922770" duration="461000" />
+      <workItem from="1517069922770" duration="2250000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24632000" />
+    <option name="totallyTimeSpent" value="26421000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="324" y="0" width="1116" height="896" extended-state="0" />
@@ -683,13 +702,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/examproject2017/front-page.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="328">
-          <caret line="31" column="103" lean-forward="false" selection-start-line="31" selection-start-column="103" selection-end-line="31" selection-end-column="103" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/plugins/examplugin/ep-cpt.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="662">
@@ -725,14 +737,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="182">
           <caret line="14" column="62" lean-forward="false" selection-start-line="14" selection-start-column="62" selection-end-line="14" selection-end-column="62" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/examproject2017/single-box.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="222">
-          <caret line="40" column="28" lean-forward="true" selection-start-line="40" selection-start-column="28" selection-end-line="40" selection-end-column="44" />
           <folding />
         </state>
       </provider>
@@ -892,18 +896,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wp-content/themes/examproject2017/header.php">
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/examproject2017/front-page.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="416">
-          <caret line="65" column="147" lean-forward="true" selection-start-line="65" selection-start-column="147" selection-end-line="65" selection-end-column="147" />
+        <state relative-caret-position="182">
+          <caret line="31" column="103" lean-forward="false" selection-start-line="31" selection-start-column="103" selection-end-line="31" selection-end-column="103" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/examproject2017/single-box.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="222">
+          <caret line="40" column="28" lean-forward="true" selection-start-line="40" selection-start-column="28" selection-end-line="40" selection-end-column="44" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/wp-content/themes/examproject2017/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="449">
-          <caret line="31" column="13" lean-forward="false" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
+        <state relative-caret-position="413">
+          <caret line="611" column="13" lean-forward="false" selection-start-line="611" selection-start-column="13" selection-end-line="611" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wp-content/themes/examproject2017/header.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="545">
+          <caret line="54" column="22" lean-forward="false" selection-start-line="54" selection-start-column="22" selection-end-line="54" selection-end-column="22" />
           <folding />
         </state>
       </provider>

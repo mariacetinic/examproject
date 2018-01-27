@@ -592,29 +592,38 @@ h3.widget-title{
 #s{
     vertical-align: top;
     border: none;
-    border-radius: 5px;
+    border-radius: 3px;
     padding: 10px 140px;
     text-align: center;
+    width: 70%;
 }
 
-#customer{
+#shoppingcart{
     display: flex;
-    justify-content: space-between;
-    width: 10%;
+    justify-content: flex-end;
+    width: 20%;
     text-align: center;
 }
 
-#customer a{
+#shoppingcart a{
     display: block;
-    padding-top: 5px;
 }
 
-#customer a:hover{
+#shoppingcart a:hover{
     color: #f8f8f8;
 }
 
+.customericon{
+    display: flex;
+}
+
+.loginicon{
+
+}
+
 .custom-fa-size{
-    font-size: 1.5em;
+    font-size: 1em;
+    padding-right: 10px;
 }
 
 /*
