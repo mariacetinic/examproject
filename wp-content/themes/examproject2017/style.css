@@ -29,7 +29,7 @@ BlankSlate is distributed under the terms of the GNU GPL
 
 */
 
-html,body,div,span,applet,object,iframe,blockquote,pre,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,menu,nav,output,ruby,section,summary,time,mark,audio,video{
+html,body,div,applet,object,iframe,blockquote,pre,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,menu,nav,output,ruby,section,summary,time,mark,audio,video{
     padding:0;
     border:0;
     margin:0;
@@ -224,7 +224,40 @@ article .hero-images{
     background-color: black;
 }
 
+.woocommerce-info{
+    border-top-color: #b561dd;
+}
 
+.woocommerce-info::before{
+    color: #b561dd;
+}
+
+.woocommerce-info, .woocommerce-message{
+    border: 1px solid #a46497;
+    background-color: transparent;
+}
+
+.woocommerce #respond input#submit, .woocommerce a.button, .woocommerce button.button, .woocommerce input.button{
+    border: none;
+    padding: 16px 32px;
+    font-size: 1em;
+    text-transform: uppercase;
+    color: #fff;
+    display: inline-block;
+    background-color: #b561dd;
+    transition: background-color .3s ease-out;
+    cursor: pointer;
+    border-radius: 0;
+}
+
+.woocommerce #respond input#submit:hover, .woocommerce a.button:hover, .woocommerce button.button:hover, .woocommerce input.button:hover{
+    color: #fff;
+    background-color: #dfa8fb;
+}
+
+.white{
+    color:#fff;
+}
 /*
 ******************************************
 ******************************************
@@ -271,6 +304,45 @@ article .hero-images{
     display: none;
 }
 
+.woocommerce form .form-row input.input-text{
+    padding: 10px 0;
+}
+
+.woocommerce form .form-row{
+    margin-top: 20px;
+}
+
+.woocommerce-error li, .woocommerce-info li, .woocommerce-message li{
+    padding-top: 10px;
+}
+
+.woocommerce #respond input#submit.alt, .woocommerce a.button.alt, .woocommerce button.button.alt, .woocommerce input.button.alt{
+    background-color: #333;
+}
+
+.woocommerce input.button:disabled, .woocommerce input.button:disabled[disabled]{
+    color: #fff;
+}
+
+.woocommerce table.cart td.actions .input-text, .woocommerce-page #content table.cart td.actions .input-text, .woocommerce-page table.cart td.actions .input-text{
+    width: 140px;
+    margin-right: 20px;
+}
+
+
+.woocommerce a.remove{
+    color: #333 !important;
+    font-weight: 400;
+}
+
+.woocommerce a.remove:hover{
+    background-color: transparent !important;
+    color: #444 !important;
+}
+
+.woocommerce-message::before{
+    color: #b561dd;
+}
 /*
 ******************************************
 ******************************************
@@ -612,14 +684,6 @@ h3.widget-title{
 */
 
 
-
-    /*
-    ******************************************
-    ******************************************
-    ****************** ABOUT US PAGE
-    ******************************************
-    ******************************************
-    */
 .aboutus{
     display: flex;
 }
