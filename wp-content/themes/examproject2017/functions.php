@@ -74,4 +74,23 @@ function remove_sidebar_shop() {
     }
 }
 
+// Ensure cart contents update when products are added to the cart via AJAX (place the following in functions.php).
+// Used in conjunction with https://gist.github.com/DanielSantoro/1d0dc206e242239624eb71b2636ab148
+// Compatible with WooCommerce 3.0+. Thanks to Alex for assisting with an update!
+
+//funkar inte
+
+function woocommerce_header_add_to_cart_fragment( $fragments ) {
+    global $woocommerce;
+
+    ob_start();
+
+    ?>
+    <a class="cart-customlocation white" href="<?php echo wc_get_cart_url(); ?>" title="<?php _e( 'View your shopping cart' ); ?>">
+        <?php echo sprintf ( _n( '%d', '%d', WC()->cart->get_cart_contents_count() ), WC()->cart->get_cart_contents_count() ); ?> | <?php echo WC()->cart->get_cart_total(); ?>
+    </a>
+    <?php
+    $fragments['a.cart-customlocation'] = ob_get_clean();
+    return $fragments;
+}
 
