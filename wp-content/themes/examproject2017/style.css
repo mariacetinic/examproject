@@ -268,8 +268,12 @@ article .hero-images{
 
 .woocommerce-account .woocommerce-MyAccount-navigation li{
     display: block;
-    padding: 10px 0 6px 5px;
+    padding: 15px 0 6px 5px;
     border-bottom: 1px solid #dfa8fb;
+}
+
+.woocommerce-account .woocommerce-MyAccount-navigation li:hover{
+    background-color: #f8f8f8;
 }
 
 .woocommerce-account .woocommerce-MyAccount-navigation ul{
@@ -300,12 +304,13 @@ article .hero-images{
     margin-top: 5em;
 }
 
-.woocommerce-result-count{
+.woocommerce-result-count, .post-edit-link{
     display: none;
 }
 
 .woocommerce form .form-row input.input-text{
-    padding: 10px 0;
+    padding: 10px 0 10px 10px;
+    font-size: .8em;
 }
 
 .woocommerce form .form-row{
@@ -342,6 +347,10 @@ article .hero-images{
 
 .woocommerce-message::before{
     color: #b561dd;
+}
+
+.entry-title{
+    margin-bottom: 60px;
 }
 /*
 ******************************************

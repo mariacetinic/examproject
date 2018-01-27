@@ -55,7 +55,13 @@
     &nbsp;&nbsp;&nbsp;
     <div class="menu-customer-item">
         <div class="loginicon">
-            <a href="#"><span class="fa fa-user-circle custom-fa-size" aria-hidden="true"></span>Log In</a>
+
+        <?php if ( is_user_logged_in() ) { ?>
+            <a href="<?php echo get_permalink( get_option('woocommerce_myaccount_page_id') ); ?>" title="<?php _e('My Account','woothemes'); ?>"><span class="fa fa-user-circle custom-fa-size" aria-hidden="true"></span><?php _e('My Account','woothemes'); ?></a>
+        <?php }
+        else { ?>
+            <a href="<?php echo get_permalink( get_option('woocommerce_myaccount_page_id') ); ?>" title="<?php _e('Login / Register','woothemes'); ?>"><span class="fa fa-user-circle custom-fa-size" aria-hidden="true"></span><?php _e('Login / Register','woothemes'); ?></a>
+        <?php } ?>
         </div>
     </div>
 </div>
