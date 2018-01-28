@@ -183,6 +183,21 @@
 
 @media all and (max-width: 500px) {
 
+    .container-skinny{
+        width: 90%;
+        flex-direction: column;
+        padding-top: 0;
+    }
+
+    .aboutus section:nth-child(1){
+        width: 100%;
+    }
+
+    .aboutus section:nth-child(2){
+        width: 100%;
+        margin-top: 30px;
+    }
+
 /*
 ******************************************
 ******************************************
@@ -198,7 +213,7 @@
         background-color: #f8f8f8;
         position: absolute;
         width: 100%;
-        z-index: 1;
+        z-index: 99;
         padding: 10px 10px;
         box-sizing: border-box;
     }
@@ -298,7 +313,6 @@
 
     #subscription p{
         width: 100%;
-        font-weight: 400;
     }
 
     #footer{
@@ -317,6 +331,18 @@
 
     #footer-img{
         text-align: left;
+    }
+
+    .woocommerce table.cart td.actions .input-text, .woocommerce-page #content table.cart td.actions .input-text, .woocommerce-page table.cart td.actions .input-text{
+        margin-right: 0;
+    }
+
+    .woocommerce #content table.cart td.actions .coupon .button.alt, .woocommerce #content table.cart td.actions .coupon .input-text + .button, .woocommerce table.cart td.actions .coupon .button.alt, .woocommerce table.cart td.actions .coupon .input-text + .button, .woocommerce-page #content table.cart td.actions .coupon .button.alt, .woocommerce-page #content table.cart td.actions .coupon .input-text + .button, .woocommerce-page table.cart td.actions .coupon .button.alt, .woocommerce-page table.cart td.actions .coupon .input-text + .button{
+        font-size: 13px;
+    }
+
+    .wpcf7-validates-as-required, .wpcf7-text, .wpcf7-textarea{
+        box-sizing: border-box;
     }
 
 }

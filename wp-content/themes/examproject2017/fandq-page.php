@@ -29,14 +29,12 @@ get_header();
                 <article>
                     <h1><?php the_title(); ?></h1>
                 </article>
-                <?php
-                if ( !wp_is_mobile() ) {
-                    ?>
+
+
                     <article>
                         <?php wp_nav_menu( array( 'theme_location' => 'aside-menu-1', 'container_class' => 'my_custom_aside' ) ); ?>
                     </article>
-                <?php }
-                ?>
+
 
             </section>
 
