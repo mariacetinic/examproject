@@ -196,9 +196,11 @@
 
     #nav-mobile{
         background-color: #f8f8f8;
-        position: relative;
+        position: absolute;
+        width: 100%;
         z-index: 1;
         padding: 10px 10px;
+        box-sizing: border-box;
     }
 
     .menu-customer-item{
@@ -221,6 +223,100 @@
 
     #s{
         background-color: #fff;
+    }
+
+    .customericon{
+        flex-direction: column;
+    }
+
+    .custom-fa-size{
+        padding-bottom: 5px;
+    }
+
+    #shoppingcart{
+        width: 60px;
+    }
+
+    #shoppingcart a{
+        font-size: .8em;
+    }
+
+    /*
+******************************************
+******************************************
+****************** BODY frontpage
+******************************************
+******************************************
+*/
+    h1.sans{
+        font-size: 2.5rem;
+    }
+
+    h2.sans{
+        font-size: 1.5rem;
+    }
+
+    .overlay-hero-title{
+        top: 22%;
+        margin: auto;
+        right: 0;
+        width: 100%;
+    }
+
+    .icons-section{
+        flex-direction: column;
+    }
+
+    .icons-section img{
+        width: 20%;
+    }
+
+    .icon-item{
+        width: 80%;
+        margin: auto;
+        margin-top: 10px;
+    }
+
+    .icon-item h2{
+        margin-bottom: 5px;
+    }
+
+    .icon-item p{
+        line-height: 18px;
+        margin-top: 10px;
+    }
+
+    .hero-images img{
+        height: 380px;
+    }
+
+    #subscription{
+        width: 90%;
+        text-align: left;
+        padding: 50px 0;
+    }
+
+    #subscription p{
+        width: 100%;
+        font-weight: 400;
+    }
+
+    #footer{
+        padding: 60px 0;
+    }
+
+    #footer-content{
+        width: 90%;
+        margin: auto;
+        flex-wrap: wrap;
+    }
+
+    .footer-item{
+        width: 45%;
+    }
+
+    #footer-img{
+        text-align: left;
     }
 
 }

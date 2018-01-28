@@ -4,6 +4,6 @@
 
 $(document).ready(function(){
     $("#navbars").click(function(){
-        $("#nav-mobile").toggle();
+        $("#nav-mobile").fadeToggle( "fast", "linear" );
     });
 });

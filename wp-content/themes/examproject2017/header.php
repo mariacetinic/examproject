@@ -33,7 +33,7 @@
 
 <section id="branding">
     <div id="navbars">
-        <a href="#"><i class="fa fa-bars white-color" aria-hidden="true"></i></a>
+        <a href="#"><i class="fa fa-bars white-color fa-2x" aria-hidden="true"></i></a>
     </div>
     <div id="logo">
         <?php if ( is_front_page() || is_home() || is_front_page() && is_home() ) { echo ''; } ?>
