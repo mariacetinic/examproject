@@ -631,6 +631,10 @@ h3.widget-title{
     border-left: 1px solid black;
 }
 
+#menu-customer-item-mobile{
+    display: none;
+}
+
 /*
 ******************************************
 ******************************************
@@ -661,8 +665,9 @@ h3.widget-title{
     border-radius: 3px;
     padding: 10px 140px;
     text-align: center;
-    width: 70%;
+    width: 100%;
     box-sizing: border-box;
+    font-size: 1em;
 }
 
 #shoppingcart{
@@ -709,17 +714,19 @@ h3.widget-title{
     box-sizing: border-box
 }
 
-#menu-main-menu li{
+
+
+#menu-main-menu-1 li{
     display: inline-block;
     padding-right: 20px;
 }
 
-#menu-main-menu li a{
+#menu-main-menu-1 li a{
     text-transform: uppercase;
 
 }
 
-#menu-main-menu li:nth-child(4) a{
+#menu-main-menu-1 li:nth-child(4) a{
     color: red;
 }
 

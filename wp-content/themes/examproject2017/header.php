@@ -18,7 +18,7 @@
 <header id="header" role="banner">
 <section id="top-menu" class="grey-bg-color">
     <span id="top-text">Free delivery from 300kr | 1-2 days delivery | Save time and energy</span>
-    <div class="menu-customer-item">
+    <div id="menu-customer-item-mobile" class="menu-customer-item">
         <div class="loginicon">
             <a class="" href="#"><span class="fa fa-headphones custom-fa-size" aria-hidden="true"></span>070 979 68 76</a>
             <?php if ( is_user_logged_in() ) { ?>
