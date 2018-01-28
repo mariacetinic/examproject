@@ -45,6 +45,7 @@
     <?php endif;?>
 
 <?php wp_footer(); ?>
+<script src="<?php bloginfo('stylesheet_directory');?>/js/script.js"></script>
 
 </body>
 </html>
