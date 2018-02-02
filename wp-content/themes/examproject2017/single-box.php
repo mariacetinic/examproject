@@ -55,30 +55,25 @@ get_header(); ?>
     </section>
     <section class="container">
         <h2>Product list</h2>
-        <ul class="custom-product-list">
-            <?php
+        
 
+        <?php 
 
-            if( have_rows('product_links') ): while ( have_rows('product_links') ) : the_row();
+$posts = get_field('box_products');
+//insåg att jag inte lagt till relationen här för att hämta in produkterna.. 
+if( $posts ): ?>
+    <ul class="custom-product-list">
+    <?php foreach( $posts as $post): // variable must be called $post (IMPORTANT) ?>
+        <?php setup_postdata($post); ?>
+        <li>
+            <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+        </li>
+    <?php endforeach; ?>
+    </ul>
+    <?php wp_reset_postdata(); // IMPORTANT - reset the $post object so the rest of the page works correctly ?>
+<?php endif; ?>
 
-                $link = get_sub_field('single_product_link');
-
-                if( $link ): ?>
-
-                    <li>
-                        <a href="<?php echo $link['url']; ?>" target="<?php echo $link['target']; ?>"><?php echo $link['title']; ?></a>
-                    </li>
-                <?php endif; ?>
-
-                <?php
-            endwhile;
-
-            else : //no rows found
-
-            endif;
-
-            ?>
-        </ul>
+         
     </section>
 <?php endwhile; endif; ?>
 <?php get_footer(); ?>

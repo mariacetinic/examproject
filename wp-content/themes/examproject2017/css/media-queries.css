@@ -24,7 +24,7 @@
     }
 
     .overlay-hero-title{
-        top: 25%;
+        top: 32%;
         right: 12%;
     }
     /****************** IMG
@@ -50,7 +50,7 @@
     }
 
     #s{
-        width: 60%;
+        width: 120%;
     }
 
     .icons-section{
@@ -112,11 +112,15 @@
 ******************************************
 */
     h1{
-        font-size: 2.7rem;
+        font-size: 2rem;
     }
     h2 {
         line-height: 21px;
         font-size: 1.2em;
+    }
+
+    .price-stock-item h2.sans{
+        font-size: 1.5em;
     }
 
     /*
@@ -177,6 +181,10 @@
 
     .my_custom_aside{
         padding-right: 30%;
+    }
+
+    .overlay-hero-title{
+        top: 32%;
     }
 
 }
@@ -263,20 +271,28 @@
     /*
 ******************************************
 ******************************************
-****************** BODY frontpage
+****************** TEXT
 ******************************************
 ******************************************
 */
     h1.sans{
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
 
     h2.sans{
-        font-size: 1.5rem;
+        font-size: 1.0rem;
     }
 
+
+        /*
+******************************************
+******************************************
+****************** BODY frontpage
+******************************************
+******************************************
+*/
+
     .overlay-hero-title{
-        top: 22%;
         margin: auto;
         right: 0;
         width: 100%;
@@ -291,7 +307,7 @@
     }
 
     .icon-item{
-        width: 80%;
+        width: 100%;
         margin: auto;
         margin-top: 10px;
     }

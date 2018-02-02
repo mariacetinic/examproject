@@ -28,6 +28,15 @@ BlankSlate is distributed under the terms of the GNU GPL
 
 */
 
+
+/*
+******************************************
+******************************************
+****************** GLOBAL 
+******************************************
+******************************************
+*/
+
 html,body,div,applet,object,iframe,blockquote,pre,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,menu,nav,output,ruby,section,summary,time,mark,audio,video{
     padding:0;
     border:0;
@@ -36,38 +45,45 @@ html,body,div,applet,object,iframe,blockquote,pre,abbr,acronym,address,big,cite,
     color: #333;
 }
 
-
-
-
 body{
     line-height: 1;
     font-family: 'Roboto', sans-serif;
 }
-
 ol,ul{
     list-style: none
 }
-
 blockquote:before,blockquote:after,q:before,q:after{
-    content:'';content:none
+    content:'';
+    content:none
 }
 table{
     border-collapse:collapse;
     border-spacing:0
 }
 
-#navbars{
-    display: none;
+
+#container{
+    width: 100%;
+    margin: auto;
 }
+
+#container #content, .container{
+    width: 80%;
+    margin: auto;
+}
+
+.container-skinny{
+    width: 70%;
+    margin: auto;
+   padding-top: 100px;
+}
+
 /*
 ******************************************
 ******************************************
 ****************** GLOBAL STYLES FOR TEXT
 ******************************************
 ******************************************
-
-font-family: 'Gloria Hallelujah', cursive;
-
 */
 
 h1, h2, h3, h4, h5, h6{
@@ -120,18 +136,6 @@ h3{
     font-weight: 400;
 }
 
-h4{
-
-}
-
-h5{
-
-}
-
-h6{
-
-}
-
 p{
     font-size: 1.0rem;
     line-height: 28px;
@@ -139,34 +143,135 @@ p{
 
 }
 
-#container{
-    width: 100%;
-    margin: auto;
-}
 
-#container #content, .container{
-    width: 80%;
-    margin: auto;
-}
+/*
+******************************************
+******************************************
+****************** NAVBAR 
+*/
 
-.container-skinny{
-    width: 70%;
-    margin: auto;
-   padding-top: 100px;
-}
-
-#nav-mobile{
+#nav-mobile, #navbars{
     display: none;
+}
+
+/*
+******************************************
+****************** TOP BAR
+*/
+
+
+#top-menu{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    padding: 10px 0;
+}
+
+#top-menu h6{
+    font-weight: 400;
+}
+.top-text:nth-child(2){
+    padding: 0 10px;
+    margin: 0 10px;
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+}
+
+#menu-customer-item-mobile{
+    display: none;
+}
+
+/*
+******************************************
+****************** MIDDLE BAR MENU
+*/
+
+#branding{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 100px;
+    background-color: #b561dd;
+}
+
+#branding #logo img{
+    width: 90px;
+}
+
+#searchsubmit{
+    vertical-align: top;
+}
+
+#s{
+    vertical-align: top;
+    border: none;
+    border-radius: 3px;
+    padding: 10px 140px;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 1em;
+}
+
+#shoppingcart{
+    display: flex;
+    justify-content: flex-end;
+    width: 20%;
+    text-align: center;
+}
+
+#shoppingcart a{
+    display: block;
+}
+
+#shoppingcart a:hover{
+    color: #f8f8f8;
+}
+
+.customericon{
+    display: flex;
+}
+
+.custom-fa-size{
+    font-size: 1em;
+    padding-right: 10px;
+}
+
+/*
+******************************************
+****************** BOTTOM BAR MENU
+*/
+
+#menu{
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box
+}
+
+#menu-main-menu-1 li{
+    display: inline-block;
+    padding-right: 20px;
+}
+
+#menu-main-menu-1 li a{
+    text-transform: uppercase;
+}
+
+#menu-main-menu-1 li:nth-child(3) a{
+    color: palevioletred;
+}
+
+#menu-customer-items div{
+    display: inline;
 }
 
 /*
 ******************************************
 ******************************************
 ****************** IMAGES
-******************************************
-******************************************
 */
-
 
 .hero-images{
     width: 100%;
@@ -185,8 +290,6 @@ p{
     text-align: center;
     top: 40%;
     right: 20%;
-    /*transform: translate(-50%, -50%);*/
-
 }
 
 .icons-section{
@@ -194,7 +297,6 @@ p{
     background-color: #dfa8fb;
     padding: 40px 0;
 }
-
 
 .icons-section img{
     width: 50%;
@@ -205,18 +307,16 @@ p{
     flex-direction: column;
     align-items: center;
     text-align: center;
-
 }
 
 .icon-item p{
     font-size: 1.2rem;
 }
+
 /*
 ******************************************
 ******************************************
-****************** BACKGROUND AND TEXT COLORS & BUTTONS
-******************************************
-******************************************
+****************** BACKGROUND, TEXT COLORS & BUTTONS
 */
 
 .white-color{
@@ -241,42 +341,6 @@ p{
 }
 
 .button:hover, button:hover, .woocommerce ul.products li.product .button:hover{
-    color: #fff;
-    background-color: #dfa8fb;
-}
-
-
-.woocommerce a.button.alt:hover{
-    background-color: black;
-}
-
-.woocommerce-info{
-    border-top-color: #b561dd;
-}
-
-.woocommerce-info::before{
-    color: #b561dd;
-}
-
-.woocommerce-info, .woocommerce-message{
-    border: 1px solid #a46497;
-    background-color: transparent;
-}
-
-.woocommerce #respond input#submit, .woocommerce a.button, .woocommerce button.button, .woocommerce input.button, .wpcf7-submit{
-    border: none;
-    padding: 10px 32px;
-    font-size: 1em;
-    text-transform: uppercase;
-    color: #fff;
-    display: inline-block;
-    background-color: #b561dd;
-    transition: background-color .3s ease-out;
-    cursor: pointer;
-    border-radius: 0;
-}
-
-.woocommerce #respond input#submit:hover, .woocommerce a.button:hover, .woocommerce button.button:hover, .woocommerce input.button:hover, .wpcf7-submit:hover {
     color: #fff;
     background-color: #dfa8fb;
 }
@@ -314,13 +378,7 @@ p{
     margin: 20px 1em;
 }
 
-.woocommerce #respond input#submit.alt, .woocommerce a.button.alt, .woocommerce button.button.alt, .woocommerce input.button.alt{
-    background-color: orange
-}
 
-.woocommerce #respond input#submit.alt, .woocommerce a.button.alt, .woocommerce button.button.alt, .woocommerce input.button.alt{
-
-}
 
 .woocommerce div.product form.cart .button{
     float: right;
@@ -348,7 +406,7 @@ p{
 }
 
 .woocommerce #respond input#submit.alt, .woocommerce a.button.alt, .woocommerce button.button.alt, .woocommerce input.button.alt{
-    background-color: #333;
+    background-color: #b561dd;
 }
 
 .woocommerce input.button:disabled, .woocommerce input.button:disabled[disabled]{
@@ -398,17 +456,71 @@ p{
 
 .woocommerce table.shop_table tfoot th{
     padding-top: 20px;
-
     padding-bottom: 20px;
 }
 
 .woocommerce #respond input#submit.alt:hover, .woocommerce a.button.alt:hover, .woocommerce button.button.alt:hover, .woocommerce input.button.alt:hover{
-    background-color: #b561dd;
+    background-color: #dfa8fb;
 }
+
+.woocommerce div.product p.price, .woocommerce div.product span.price{
+    color: #333;
+}
+
+.onsale{
+    display: none;
+}
+.woocommerce ul.products li.product .price ins{
+    font-weight: 600;
+    font-size: 1.2em;
+    text-decoration: none;
+    color: palevioletred;
+}
+
+.woocommerce ul.products li.product .price{
+    color: #333;
+}
+
+
+.woocommerce a.button.alt:hover{
+    background-color: black;
+}
+
+.woocommerce-info{
+    border-top-color: #b561dd;
+}
+
+.woocommerce-info::before{
+    color: #b561dd;
+}
+
+.woocommerce-info, .woocommerce-message{
+    border: 1px solid #a46497;
+    background-color: transparent;
+}
+
+.woocommerce #respond input#submit, .woocommerce a.button, .woocommerce button.button, .woocommerce input.button, .wpcf7-submit{
+    border: none;
+    padding: 10px 32px;
+    font-size: 1em;
+    text-transform: uppercase;
+    color: #fff;
+    display: inline-block;
+    background-color: #b561dd;
+    transition: background-color .3s ease-out;
+    cursor: pointer;
+    border-radius: 0;
+}
+
+.woocommerce #respond input#submit:hover, .woocommerce a.button:hover, .woocommerce button.button:hover, .woocommerce input.button:hover, .wpcf7-submit:hover {
+    color: #fff;
+    background-color: #dfa8fb;
+}
+
 /*
 ******************************************
 ******************************************
-****************** CUSTOM POST TYPE
+****************** CUSTOM POST TYPE (PLUGIN)
 ******************************************
 ******************************************
 */
@@ -470,13 +582,14 @@ p{
 }
 
 .product-cost h2, .woocommerce ul.products li.product .woocommerce-loop-product__title{
-    font-size: 1.2em;
+    font-size: .9em;
     margin-bottom: 10px;
     margin-top: 0;
     font-family: 'Roboto', sans-serif;
     color: #333;
     font-weight: 300;
     text-align: center;
+    line-height: 23px;
 }
 
 .woocommerce ul.products li.product .woocommerce-loop-product__title{
@@ -487,6 +600,8 @@ p{
     text-align: center;
     font-weight: 500;
     font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: space-around;
 }
 
 .woocommerce ul.products li.product, .woocommerce-page ul.products li.product{
@@ -537,19 +652,6 @@ p{
     font-style: italic;
 
 }
-
-
-
-/*
-funkar inte
-.box-container{
-    flex: 1 0 280px;
-}
-
-.box-container:last-child{
-    flex: 0 0 280px;
-}
-*/
 
 /*
 ******************************************
@@ -608,137 +710,6 @@ h3.widget-title{
 /*
 ******************************************
 ******************************************
-****************** TOP BAR
-******************************************
-******************************************
-*/
-
-
-#top-menu{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center; 
-    padding: 10px 0;
-}
-
-#top-menu h6{
-    font-weight: 400;
-}
-.top-text:nth-child(2){
-    padding: 0 10px;
-    margin: 0 10px;
-    border-right: 1px solid black;
-    border-left: 1px solid black;
-}
-
-#menu-customer-item-mobile{
-    display: none;
-}
-
-/*
-******************************************
-******************************************
-****************** MIDDLE BAR MENU
-******************************************
-******************************************
-*/
-
-#branding{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 100px;
-    background-color: #b561dd;
-}
-
-#branding #logo img{
-    width: 90px;
-}
-
-#searchsubmit{
-    vertical-align: top;
-}
-
-#s{
-    vertical-align: top;
-    border: none;
-    border-radius: 3px;
-    padding: 10px 140px;
-    text-align: center;
-    width: 100%;
-    box-sizing: border-box;
-    font-size: 1em;
-}
-
-#shoppingcart{
-    display: flex;
-    justify-content: flex-end;
-    width: 20%;
-    text-align: center;
-}
-
-#shoppingcart a{
-    display: block;
-}
-
-#shoppingcart a:hover{
-    color: #f8f8f8;
-}
-
-.customericon{
-    display: flex;
-}
-
-.loginicon{
-
-}
-
-.custom-fa-size{
-    font-size: 1em;
-    padding-right: 10px;
-}
-
-/*
-******************************************
-******************************************
-****************** BOTTOM BAR MENU
-******************************************
-******************************************
-*/
-
-#menu{
-    width: 100%;
-    padding: 30px 100px;
-    display: flex;
-    justify-content: space-between;
-    box-sizing: border-box
-}
-
-
-
-#menu-main-menu-1 li{
-    display: inline-block;
-    padding-right: 20px;
-}
-
-#menu-main-menu-1 li a{
-    text-transform: uppercase;
-
-}
-
-#menu-main-menu-1 li:nth-child(4) a{
-    color: red;
-}
-
-
-#menu-customer-items div{
-    display: inline;
-}
-
-
-/*
-******************************************
-******************************************
 ****************** FRONT PAGE
 ******************************************
 ******************************************
@@ -767,7 +738,6 @@ h3.widget-title{
 ******************************************
 */
 
-
 .aboutus{
     display: flex;
 }
@@ -788,7 +758,6 @@ h3.widget-title{
 .qa h3{
     border-bottom: 1px solid #cdcdcd;
     padding-bottom: 15px;
-
 }
 
 #menu-aside-menu ul{
@@ -810,7 +779,6 @@ h3.widget-title{
     padding-right: 60%;
 }
 
-
 img{
     width: 100%;
 }
@@ -828,6 +796,7 @@ img{
     padding: 10px;
     font-size: 14px;
 }
+
 /*
 ******************************************
 ******************************************

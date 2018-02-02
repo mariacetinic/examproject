@@ -28,6 +28,7 @@
 
 
     <?php
+    //tycker det är en bra lösning så länge. Kände det var onödigt att leta upp alla bankloggor, ordna så det ser snyggt ut osv när jag lika väl kunde fokusera på annat kul.
     if( get_field('banks') ):
         $attachment_id = get_field('banks');
         $size = "full"; // (thumbnail, medium, large, full or custom size)
